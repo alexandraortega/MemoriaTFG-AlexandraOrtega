@@ -145,7 +145,7 @@ y habiendo obtenido la siguiente calificación:
 
 \vspace{1cm}
 \begin{flushright}
-Fuenlabrada, a \qquad$\;\,$ de \qquad\qquad\qquad\qquad de 20XX
+Fuenlabrada, a \qquad$\;\,$ de \qquad\qquad\qquad\qquad de 2017
 \end{flushright}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -234,7 +234,7 @@ just before submitting.
 \label{sec:intro} % etiqueta para poder referenciar luego en el texto con ~\ref{sec:intro}
 \pagenumbering{arabic} % para empezar la numeración de página con números
 
-En este capítulo se introduce el proyeto. Debería tener información general sobre 
+En este capítulo se introduce el proyecto. Debería tener información general sobre 
 el mismo, dando la información sobre el contexto en el que se ha desarrollado.
 
 No te olvides de echarle un ojo a la página con los cinco errores de escritura más frecuentes\footnote{\url{http://www.tallerdeescritores.com/errores-de-escritura-frecuentes}}.
@@ -442,7 +442,7 @@ La lógica del proyecto My App Inventor está organizada en los siguientes direc
 \begin{itemize}
 	\item Projecto Django - \textbf{analyzeMyApp}: dentro nos encontraremos con los ficheros de configuración. En \textit{settings.py} indicaremos los parámetros principales del programa (directorios, idioma, base de datos \ldots), mientras que en \textit{wsgi.py} especificaremos las reglas de comunicación entre un servidor web y nuestra aplicación cuando despleguemos en producción. 
 	\item Aplicación - \textbf{myAnalyzer}: en este directorio guardaremos la lógica de la aplicación, es decir, qué hacer cuando recibimos una petición, cómo será nuestro modelo de datos, qué pasos seguir al analizar un fichero recibido\ldots. En las siguientes secciones veremos más en detalle este apartado.
-	\item Ficheros estáticos - \textbf{static}: donde están las imágenes, estilos css y pequeños Javascript para utilizar con Bootstrap.  
+	\item Ficheros estáticos - \textbf{static}: donde están las imágenes, estilos CSS y pequeños JavaScript para utilizar con Bootstrap.  
 	\item Plantillas - \textbf{templates}: incluye todas las plantillas HTML que formarán parte de la interacción del usuario con la aplicación. 
 	\item Proyectos guardados - \textbf{saved\_projects}: además de guardar la información más relevante en base de datos, guardaremos una copia de seguridad de cada proyecto subido por el usuario en disco, así en caso de posibles ampliaciones de la lógica de evaluación, se podrá actualizar el resultado de forma transparente al usuario sin necesidad de que vuelva a cargar su programa de nuevo. 
 \end{itemize}  
@@ -500,7 +500,7 @@ En líneas generales, el flujo de la aplicación sigue los pasos de la Figura~\r
   \caption{Flujo principal My App Inventor}
   \label{fig:flujoapp}
 \end{figure}
-En el momento en que la aplicación recibe una petición HTTP del usuario con una url concreta, ésta se mapea en el fichero \textit{urls.py}. Éste a su vez redige la información a un procedimiento concreto de \textit{wsgi.py} en función de la operación a realizar: iniciar o cerrar sesión, actualizar datos de perfil, cargar un nuevo programa, ver los anteriormente guardados \ldots No todas las urls son accesibles al usuario mediante la petición GET; por ejemplo, sólo podremos acceder a la vista que analiza los proyectos del usuario,\textit{views.showUserAnalyzeProjectsPage}, mediante una petición de tipo POST insertada en un formulario de la aplicación para mantener la integridad de los datos recibidos y controlar su contenido. Lo mismo ocurre con la vista \textit{views.showDownloadPage} en la que se accede a la petición POST a través de un formulario.
+En el momento en que la aplicación recibe una petición HTTP del usuario con una URL concreta, ésta se mapea en el fichero \textit{urls.py}. Éste a su vez redirige la información a un procedimiento concreto de \textit{wsgi.py} en función de la operación a realizar: iniciar o cerrar sesión, actualizar datos de perfil, cargar un nuevo programa, ver los anteriormente guardados \ldots No todas las URLs son accesibles al usuario mediante la petición GET; por ejemplo, sólo podremos acceder a la vista que analiza los proyectos del usuario,\textit{views.showUserAnalyzeProjectsPage}, mediante una petición de tipo POST insertada en un formulario de la aplicación para mantener la integridad de los datos recibidos y controlar su contenido. Lo mismo ocurre con la vista \textit{views.showDownloadPage} en la que se accede a la petición POST a través de un formulario.
 \begin{verbatim}
 urlpatterns = [
                url(r'^login/', views.showLoginPage),
@@ -519,7 +519,7 @@ Veamos en más detalle los diferentes procedimientos implicados en el proceso gl
 \subsubsection{Comunicación}
 Como hemos comentado anteriormente, si un usuario no inicia sesión en la aplicación, se le devolverá siempre a la página inicial. Entre todas las librerías (o \textit{views}) que incorpora Django, utilizaremos el Sistema de Autenticación \footnote{\url{https://docs.djangoproject.com/en/1.11/topics/auth/default/}} para complementar las vistas que nos ayudarán a realizar las operaciones más comunes como iniciar o cerrar sesión (\textit{views.showLoginPage, views.showLogoutPage}), mantener la misma entre peticiones al servidor o comprobar si un usuario está conectado. 
 
-Todas las peticiones se realizarán a través de los objetos HttpResponse \footnote{\url{https://docs.djangoproject.com/en/1.11/ref/request-response/}} de Django que manejan solicitudes GET y POST según corresponda. Por ejemplo, en la vista de inicio de sesión, se diferencia entre la solicitud de \textit{loggin} (GET), donde respondemos al usuario con un formulario en el que introducir sus datos de registro, y la recepción de los mismos en el método POST para autenticarle. 
+Todas las peticiones se realizarán a través de los objetos HttpResponse \footnote{\url{https://docs.djangoproject.com/en/1.11/ref/request-response/}} de Django que manejan solicitudes GET y POST según corresponda. Por ejemplo, en la vista de inicio de sesión, se diferencia entre la solicitud de \textit{login} (GET), donde respondemos al usuario con un formulario en el que introducir sus datos de registro, y la recepción de los mismos en el método POST para autenticarle. 
 
 Tras el inicio de sesión, el usuario será redirigido a la página principal donde podrá evaluar su código en función de si ya está subido a la aplicación o no, como vimos en la Figura~\ref{fig:flujoapp}. 
 
@@ -530,7 +530,7 @@ Tras el inicio de sesión, el usuario será redirigido a la página principal do
   \label{fig:usercontent}
 \end{figure}
 
-Primero veamos el caso donde un programador quiere analizar su código por primera vez. La función \textit{views.showDownloadPage} devuelve en la primera petición (GET) un formulario en el que el usuario podrá buscar en su disco el fichero comprimido \textit{.aia} que previamente se ha descargado de su cuenta en App Inventor. Tras pulsar el botón Enviar, el navegador enviará una petición POST con el fichero al Servidor, donde se comprobará que no existe previamente para este usuario y decomprimirá, para posteriormente almacenar la información más relevante en base de datos. 
+Primero veamos el caso donde un programador quiere analizar su código por primera vez. La función \textit{views.showDownloadPage} devuelve en la primera petición (GET) un formulario en el que el usuario podrá buscar en su disco el fichero comprimido \textit{.aia} que previamente se ha descargado de su cuenta en App Inventor. Tras pulsar el botón Enviar, el navegador enviará una petición POST con el fichero al Servidor, donde se comprobará que no existe previamente para este usuario y descomprimirá, para posteriormente almacenar la información más relevante en base de datos. 
 
 La estructura en la que App Inventor guarda la información sigue el esquema descrito en la figura~\ref{fig:dirappinventor}. En la carpeta \textit{assets} se almacenan los ficheros estáticos de la aplicación, como las imágenes y sonidos. En \textit{project.properties} se especifica la configuración del proyecto: versión del código, primera pantalla, tamaño\ldots. Y finalmente en el último nivel del directorio \textit{src} se encuentran la información relativa a los bloques utilizados (*.scm) y las lógicas que los relacionan (*.bky) por pantallas. Los datos más importantes para My App Inventor se encuentran en este último nivel y por ello serán los que guardemos en base de datos para su posterior análisis. 
 
@@ -561,7 +561,7 @@ Tanto si partimos de un código nuevo como de uno ya existente, la última opera
 El análisis de los programas del usuario se realiza a tres niveles: componentes, programación y usabilidad, cada uno con sus correspondientes subniveles. Como habíamos comentado en la sección anterior, en base de datos tendremos la información principal de las pantallas que forman cada proyecto. Para cada pantalla tenemos:
 
 \begin{itemize}
-  \item Fichero \textbf{.scm}: contiene los bloques añadidos al proyecto y sus propiedades en formato Json (JavaScript Object Notation)\footnote{\url{http://www.json.org/}}, un formato de representación de objetos con una estructura sencilla basada en relaciones nombre-valor. En función del bloque utilizado tendremos unas propiedades u otras: posición (\textit{AlignHorizontal}), fondo (\textit{BackgroundColor}), tamaño (\textit{Width}) \ldots 
+  \item Fichero \textbf{.scm}: contiene los bloques añadidos al proyecto y sus propiedades en formato JSON (JavaScript Object Notation)\footnote{\url{http://www.json.org/}}, un formato de representación de objetos con una estructura sencilla basada en relaciones nombre-valor. En función del bloque utilizado tendremos unas propiedades u otras: posición (\textit{AlignHorizontal}), fondo (\textit{BackgroundColor}), tamaño (\textit{Width}) \ldots 
 	\begin{figure}[H]
 	  \centering
 	  \includegraphics[width=\linewidth, keepaspectratio]{img/scmCode}
@@ -583,7 +583,7 @@ La función \textit{views.showUserAnalyzeProjectsPage} será la encargada de rec
   \item \textbf{scoreMyAppMessages}: procesa las clasificaciones y genera mensajes personalizados para el usuario.
 \end{itemize}
 
-Dentro de \textit{scoreMyApp.getScore} analizaremos cada nivel pantalla por pantalla, comparando los resultados en cada iteracción de forma que la estructura final contenga toda la información del programa. 
+Dentro de \textit{scoreMyApp.getScore} analizaremos cada nivel pantalla por pantalla, comparando los resultados en cada iteración de forma que la estructura final contenga toda la información del programa. 
 \begin{verbatim}
 if componentLevels['Score'] > generalScore['ComponentLevels']['Score']:
 # Update
@@ -635,7 +635,7 @@ Para la evaluación de los \textbf{componentes} se han clasificado en tres nivel
 
 
 % DISEÑO E IMPLENTACIÓN DEL CLIENTE %
-\section{Diseño e implentación del cliente} 
+\section{Diseño e implementación del cliente} 
 \label{sec:arquitecturaCliente}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
