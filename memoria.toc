@@ -1,0 +1,38 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}
+\contentsline {section}{\numberline {1.1}}{1}
+\contentsline {subsection}{\numberline {1.1.1}Estilo}{1}
+\contentsline {section}{\numberline {1.2}Estructura de la memoria}{3}
+\contentsline {chapter}{\numberline {2}Objetivos}{5}
+\contentsline {section}{\numberline {2.1}Objetivo general}{5}
+\contentsline {section}{\numberline {2.2}Objetivos espec\IeC {\'\i }ficos}{5}
+\contentsline {section}{\numberline {2.3}Planificaci\IeC {\'o}n temporal}{6}
+\contentsline {chapter}{\numberline {3}Estado del arte}{7}
+\contentsline {section}{\numberline {3.1}App Inventor}{7}
+\contentsline {section}{\numberline {3.2}Python}{7}
+\contentsline {section}{\numberline {3.3}Django}{7}
+\contentsline {section}{\numberline {3.4}SQLite}{8}
+\contentsline {section}{\numberline {3.5}HHTP}{8}
+\contentsline {section}{\numberline {3.6}CSS}{8}
+\contentsline {section}{\numberline {3.7}HTML5}{8}
+\contentsline {section}{\numberline {3.8}Bootstrap}{8}
+\contentsline {section}{\numberline {3.9}Ajax}{8}
+\contentsline {section}{\numberline {3.10}Javascript}{8}
+\contentsline {chapter}{\numberline {4}Dise\IeC {\~n}o e implementaci\IeC {\'o}n}{9}
+\contentsline {section}{\numberline {4.1}Arquitectura general}{9}
+\contentsline {section}{\numberline {4.2}Dise\IeC {\~n}o e implementaci\IeC {\'o}n del servidor}{10}
+\contentsline {subsection}{\numberline {4.2.1}L\IeC {\'o}gica servidor: Django}{10}
+\contentsline {subsubsection}{Comunicaci\IeC {\'o}n}{13}
+\contentsline {subsubsection}{An\IeC {\'a}lisis de c\IeC {\'o}digo}{15}
+\contentsline {subsubsection}{Env\IeC {\'\i }o de resultados}{19}
+\contentsline {subsection}{\numberline {4.2.2}Modelo de datos}{19}
+\contentsline {section}{\numberline {4.3}Dise\IeC {\~n}o e implentaci\IeC {\'o}n del cliente}{19}
+\contentsline {chapter}{\numberline {5}Resultados}{21}
+\contentsline {chapter}{\numberline {6}Conclusiones}{23}
+\contentsline {section}{\numberline {6.1}Consecuci\IeC {\'o}n de objetivos}{23}
+\contentsline {section}{\numberline {6.2}Aplicaci\IeC {\'o}n de lo aprendido}{23}
+\contentsline {section}{\numberline {6.3}Lecciones aprendidas}{23}
+\contentsline {section}{\numberline {6.4}Trabajos futuros}{24}
+\contentsline {section}{\numberline {6.5}Valoraci\IeC {\'o}n personal}{24}
+\contentsline {chapter}{\numberline {A}Manual de usuario}{25}
+\contentsline {chapter}{Bibliograf\'{\i }a}{27}

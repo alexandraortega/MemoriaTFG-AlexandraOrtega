@@ -3,17 +3,17 @@
 %%
 %% Por Gregorio Robles <grex arroba gsyc.urjc.es>
 %%     Grupo de Sistemas y Comunicaciones
-%%     Escuela T�cnica Superior de Ingenieros de Telecomunicaci�n
+%%     Escuela Técnica Superior de Ingenieros de Telecomunicación
 %%     Universidad Rey Juan Carlos
 %% (muchas ideas tomadas de Internet, colegas del GSyC, antiguos alumnos...
 %%  etc. Muchas gracias a todos)
 %%
-%% La �ltima versi�n de esta plantilla est� siempre disponible en:
+%% La última versión de esta plantilla está siempre disponible en:
 %%     https://github.com/gregoriorobles/plantilla-memoria
 %%
 %% Para obtener PDF, ejecuta en la shell:
 %%   make
-%% (las im�genes deben ir en PNG o JPG)
+%% (las imágenes deben ir en PNG o JPG)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -22,14 +22,24 @@
 
 \usepackage[a4paper, left=2.5cm, right=2.5cm, top=3cm, bottom=3cm]{geometry}
 \usepackage{times}
-\usepackage[latin1]{inputenc}
-\usepackage[spanish]{babel} % Comenta esta l�nea si tu memoria es en ingl�s
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel} % Comenta esta línea si tu memoria es en inglés
 \usepackage{url}
 %\usepackage[dvipdfm]{graphicx}
 \usepackage{graphicx}
 \usepackage{float}  %% H para posicionar figuras
-\usepackage[nottoc, notlot, notlof, notindex]{tocbibind} %% Opciones de �ndice
+\usepackage[nottoc, notlot, notlof, notindex]{tocbibind} %% Opciones de índice
 \usepackage{latexsym}  %% Logo LaTeX
+\usepackage{dirtree}
+\usepackage{tikz}
+
+\usetikzlibrary{shapes,arrows}
+\tikzstyle{decision} = [diamond, draw, 
+    text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw,  
+    text width=5em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line} = [draw, -latex']
+
 
 \title{Memoria del Proyecto}
 \author{Nombre del autor}
@@ -38,8 +48,8 @@
 
 \begin{document}
 
-\renewcommand{\refname}{Bibliograf�a}  %% Renombrando
-\renewcommand{\appendixname}{Ap�ndice}
+\renewcommand{\refname}{Bibliografía}  %% Renombrando
+\renewcommand{\appendixname}{Apéndice}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PORTADA
@@ -61,26 +71,26 @@
 \vspace{3cm}
 
 \Large
-TITULACI�N EN MAY�SCULAS
+INGENIERÍA EN TELECOMUNICACIONES Y LICENCIATURA EN ADMINISTRACIÓN Y DIRECCIÓN DE EMPRESAS
 
 \vspace{0.4cm}
 
 \large
-Curso Acad�mico 2020/2021
+Curso Académico 2016/2017
 
 \vspace{0.8cm}
 
-Trabajo Fin de Carrera/Grado/M�ster
+Trabajo Fin de Carrera
 
 \vspace{2.5cm}
 
 \LARGE
-T�TULO DEL TRABAJO EN MAY�SCULAS
+MY APP ANALYZER
 
 \vspace{4cm}
 
 \large
-Autor : Nombre del Alumno \\
+Autor : Alexandra Ortega Martín \\
 Tutor : Dr. Gregorio Robles
 \end{center}
 \end{titlepage}
@@ -103,17 +113,17 @@ Tutor : Dr. Gregorio Robles
 
 \vspace{1cm}
 \large
-FIXME: T�tulo
+My App Analyzer
 
 \vspace{1cm}
 \large
-\textbf{Autor :} FIXME \\
-\textbf{Tutor :} Dr. Gregorio Robles Mart�nez
+\textbf{Autor :} Alexandra Ortega Martín \\
+\textbf{Tutor :} Dr. Gregorio Robles Martínez
 
 \end{center}
 
 \vspace{1cm}
-La defensa del presente Proyecto Fin de Carrera se realiz� el d�a \qquad$\;\,$ de \qquad\qquad\qquad\qquad \newline de 20XX, siendo calificada por el siguiente tribunal:
+La defensa del presente Proyecto Fin de Carrera se realizó el día \qquad$\;\,$ de \qquad\qquad\qquad\qquad \newline de 2017, siendo calificada por el siguiente tribunal:
 
 
 \vspace{0.5cm}
@@ -127,15 +137,15 @@ La defensa del presente Proyecto Fin de Carrera se realiz� el d�a \qquad$\;\,$ d
 
 
 \vspace{1.2cm}
-y habiendo obtenido la siguiente calificaci�n:
+y habiendo obtenido la siguiente calificación:
 
 \vspace{1cm}
-\textbf{Calificaci�n:}
+\textbf{Calificación:}
 
 
 \vspace{1cm}
 \begin{flushright}
-Fuenlabrada, a \qquad$\;\,$ de \qquad\qquad\qquad\qquad de 20XX
+Fuenlabrada, a \qquad$\;\,$ de \qquad\qquad\qquad\qquad de 2017
 \end{flushright}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -152,39 +162,39 @@ mi familia / mi abuelo / mi abuela}
 %%%% Agradecimientos
 
 \chapter*{Agradecimientos}
-%\addcontentsline{toc}{chapter}{Agradecimientos} % si queremos que aparezca en el �ndice
+%\addcontentsline{toc}{chapter}{Agradecimientos} % si queremos que aparezca en el índice
 \markboth{AGRADECIMIENTOS}{AGRADECIMIENTOS} % encabezado 
 
-Aqu� vienen los agradecimientos\ldots Aunque est� bien acordarse de la pareja,
+Aquí vienen los agradecimientos\ldots Aunque está bien acordarse de la pareja,
 no hay que olvidarse de dar las gracias a tu madre, que aunque a veces no lo 
-parezca disfrutar� tanto de tus logros como t�\ldots Adem�s, la pareja quiz�s
-no sea para siempre, pero tu madre s�.
+parezca disfrutará tanto de tus logros como tú\ldots Además, la pareja quizás
+no sea para siempre, pero tu madre sí.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Resumen
 
 \chapter*{Resumen}
-%\addcontentsline{toc}{chapter}{Resumen} % si queremos que aparezca en el �ndice
+%\addcontentsline{toc}{chapter}{Resumen} % si queremos que aparezca en el índice
 \markboth{RESUMEN}{RESUMEN} % encabezado
 
-Aqu� viene un resumen del proyecto. Ha de constar de tres o cuatro p�rrafos,
-donde se presente de manera clara y concisa de qu� va el proyecto. Han
+Aquí viene un resumen del proyecto. Ha de constar de tres o cuatro párrafos,
+donde se presente de manera clara y concisa de qué va el proyecto. Han
 de quedar respondidas las siguientes preguntas:
 
 \begin{itemize}
-  \item �De qu� va este proyecto? �Cu�l es su objetivo principal?
-  \item �C�mo se ha realizado? �Qu� tecnolog�as est�n involucradas?
-  \item �En qu� contexto se ha realizado el proyecto? �Es un proyecto
+  \item ¿De qué va este proyecto? ¿Cuál es su objetivo principal?
+  \item ¿Cómo se ha realizado? ¿Qué tecnologías están involucradas?
+  \item ¿En qué contexto se ha realizado el proyecto? ¿Es un proyecto
 dentro de un marco general?
 \end{itemize}
 
 Lo mejor es escribir el resumen al final.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%% Resumen en ingl�s
+%%%% Resumen en inglés
 
 \chapter*{Summary}
-%\addcontentsline{toc}{chapter}{Summary} % si queremos que aparezca en el �ndice
+%\addcontentsline{toc}{chapter}{Summary} % si queremos que aparezca en el índice
 \markboth{SUMMARY}{SUMMARY} % encabezado
 
 Here comes a translation of the ``Resumen'' into English. Please, double check
@@ -195,20 +205,20 @@ just before submitting.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% �NDICES %
+% ÍNDICES %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Las buenas noticias es que los �ndices se generan autom�ticamente.
-% Lo �nico que tienes que hacer es elegir cu�les quieren que se generen,
-% y comentar/descomentar esa instrucci�n de LaTeX.
+% Las buenas noticias es que los índices se generan automáticamente.
+% Lo único que tienes que hacer es elegir cuáles quieren que se generen,
+% y comentar/descomentar esa instrucción de LaTeX.
 
-%%%% �ndice de contenidos
+%%%% Índice de contenidos
 \tableofcontents 
-%%%% �ndice de figuras
+%%%% Índice de figuras
 \cleardoublepage
 %\addcontentsline{toc}{chapter}{Lista de figuras} % para que aparezca en el indice de contenidos
 \listoffigures % indice de figuras
-%%%% �ndice de tablas
+%%%% Índice de tablas
 %\cleardoublepage
 %\addcontentsline{toc}{chapter}{Lista de tablas} % para que aparezca en el indice de contenidos
 %\listoftables % indice de tablas
@@ -216,18 +226,18 @@ just before submitting.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% INTRODUCCI�N %
+% INTRODUCCIÓN %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cleardoublepage
-\chapter{Introducci�n}
+\chapter{Introducción}
 \label{sec:intro} % etiqueta para poder referenciar luego en el texto con ~\ref{sec:intro}
-\pagenumbering{arabic} % para empezar la numeraci�n de p�gina con n�meros
+\pagenumbering{arabic} % para empezar la numeración de página con números
 
-En este cap�tulo se introduce el proyeto. Deber�a tener informaci�n general sobre 
-el mismo, dando la informaci�n sobre el contexto en el que se ha desarrollado.
+En este capítulo se introduce el proyecto. Debería tener información general sobre 
+el mismo, dando la información sobre el contexto en el que se ha desarrollado.
 
-No te olvides de echarle un ojo a la p�gina con los cinco errores de escritura m�s frecuentes\footnote{\url{http://www.tallerdeescritores.com/errores-de-escritura-frecuentes}}.
+No te olvides de echarle un ojo a la página con los cinco errores de escritura más frecuentes\footnote{\url{http://www.tallerdeescritores.com/errores-de-escritura-frecuentes}}.
 
 \section{}
 \label{sec:}
@@ -240,7 +250,7 @@ Sobre el uso de las comas\footnote{\url{http://narrativabreve.com/2015/02/opinio
  \begin{figure}
     \centering
     \includegraphics[bb=0 0 800 600, width=12cm, keepaspectratio]{img/foro1}
-    \caption{P�gina con enlaces a hilos}
+    \caption{Página con enlaces a hilos}
     \label{figura:foro_hilos}
  \end{figure}
 
@@ -279,14 +289,14 @@ Sobre el uso de las comas\footnote{\url{http://narrativabreve.com/2015/02/opinio
 \section{Estructura de la memoria}
 \label{sec:estructura}
 
-En esta secci�n se deber�a introducir la esctura de la memoria. As�:
+En esta sección se debería introducir la esctura de la memoria. Así:
 
 \begin{itemize}
-  \item En el primer cap�tulo se hace una intro al proyecto.
+  \item En el primer capítulo se hace una intro al proyecto.
   
-  \item En el cap�tulo~\ref{chap:objetivos} se muestran los objetivos del proyecto.
+  \item En el capítulo~\ref{chap:objetivos} se muestran los objetivos del proyecto.
   
-  \item A continuaci�n se presenta el estado del arte.
+  \item A continuación se presenta el estado del arte.
   
   \item \ldots
 \end{itemize}
@@ -303,16 +313,43 @@ En esta secci�n se deber�a introducir la esctura de la memoria. As�:
 \label{chap:objetivos}
 
 \section{Objetivo general}
-label{sec:objetivo-general}
+\label{sec:objetivo-general} El objetivo general de este proyecto es crear una plataforma donde los nuevos programadores puedan evaluar su código de forma que no sólo puedan conocer sus puntos fuertes y débiles sino que además puedan obtener nuevos retos para mejorar sus habilidades computacionales. 
+
+Niños y jóvenes con interés por la programación conforman el público objetivo al que va destinada la aplicación. Por ello se han adaptado el diseño, funcionalidad y lenguaje para que resulten la experiencia de usuario sea lo más atractiva y lúdica posible. 
+
+En el sistema de clasificación hemos huido de las puntuaciones númericas, convirtiéndolas en tres niveles representados por los colores del semáforo: alto (verde), medio (amarillo) y bajo (rojo). De esta manera convertimos la experiencia en un juego, enmarcándola en un contexto más positivo para el usuario y alejándonos de las puntuaciones númericas utilizadas de los exámenes. 
+
+Toda la aplicación se relaciona con el usuario a través de un lenguaje coloquial, sencillo y en inglés. Se eligió este idioma porque es importante familizarizar a los niños con el mismo y reforzar sus conocimientos a través del juego.
+
+\section{Objetivos específicos}
+\label{sec:objetivos-especificos}
+\begin{itemize}
+  \item Analizar las posibilidades de personalización y bloques computacionales que ofrece App Inventor como herramienta para crear programas.
+
+  \item Definir las habilidades y capacidades del usuario a analizar. De los múltiples enfoques considerados y de cara a una simplicación de la información final se optó por crear tres grandes bloques de análisis: componentes, programación y usabilidad.
+
+  \item Crear una aplicación Django donde se recoja la lógica anterior y poder ofrecer al usuario la información de manera clara y resumida. El usuario podrá además tener un registro de los proyectos guardados con anterioridad para poder revisar su clasificación. 
+  
+  \item Unir las tecnologías Django, Bootstrap y Ajax para mejorar la capa de \textit{Front End} y hacer la experiencia de usuario mucho más dinámica.   
+\end{itemize}
 
 
-\section{Objetivos espec�ficos}
-label{sec:objetivos-especificos}
+\section{Planificación temporal}
+\label{sec:planificacion-temporal}
+La planificación temporal del proyecto ha sido definida en función de los objetivos específicos marcados siguiendo un orden que permitiera avanzar en todos los aspectos de la aplicación:
+\begin{itemize}
+  \item \textbf{Fase I}: búsqueda de documentación sobre App Inventor y creación de una cuenta en su web \footnote{\url{http://appinventor.mit.edu/explore/}}donde poder analizar los bloques disponibles para el usuario, el contenido del archivo comprimido (\textit{.aia}) en que se guardan los programas y cómo se representa la información dentro del mismo. 
 
-
-\section{Planificaci�n temporal}
-label{sec:planificacion-temporal}
-
+  \item \textbf{Fase II}: 
+	\begin{itemize}
+		\item Creación de una aplicación Django con una web simple donde subir el fichero con el proyecto, descomprimirlo y guardar su información en base de datos.
+		\item Añadir la posibilidad de tener una cuenta de usuario en la aplicación donde se almacenen los diferentes proyectos subidos de cara a futuras consultas. 
+	\end{itemize}
+  \item \textbf{Fase III}: definición de los puntos a analizar en cada proyecto subido e implementar la lógica de evaluación y clasificación.
+  
+  
+  \item \textbf{Fase IV}: incorporar a la web las tecnologías Bootstrap y Ajax para añadir dinamismo y mejorar su aspecto. 
+\end{itemize}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -323,40 +360,283 @@ label{sec:planificacion-temporal}
 \cleardoublepage
 \chapter{Estado del arte}
 
-Descripci�n de las tecnolog�as que utilizas en tu trabajo. Con dos o tres p�rrafos por cada tecnolog�a, vale.
+En este capítulo se explicarán brevemente las principales tecnologías utilizadas en el proyecto.
 
+Puedes citar libros, como el de Bonabeau et al. sobre procesos estigmérgicos~\cite{bonabeau:_swarm}. % Nota que el ~ añade un espacio en blanco, pero no deja que exista un salto de línea. Imprescindible ponerlo para las citas.
 
-Puedes citar libros, como el de Bonabeau et al. sobre procesos estigm�rgicos~\cite{bonabeau:_swarm}. % Nota que el ~ a�ade un espacio en blanco, pero no deja que exista un salto de l�nea. Imprescindible ponerlo para las citas.
-
-Tambi�n existe la posibilidad de poner notas al pie de p�gina, por ejemplo, 
-una para indicarte que visite la p�gina de 
+También existe la posibilidad de poner notas al pie de página, por ejemplo, 
+una para indicarte que visite la página de 
 LibreSoft\footnote{\url{http://www.libresoft.es}}.
 
-\section{Secci�n 1} 
+\section{App Inventor} 
 \label{sec:seccion1}
+(Contenido)
 
+\section{Python} 
+\label{sec:seccion2}
+(Contenido)
 
+\section{Django} 
+\label{sec:seccion3}
+(Contenido)
 
+\section{SQLite} 
+\label{sec:seccion4}
+(Contenido)
+
+\section{HHTP} 
+\label{sec:seccion5}
+(Contenido)
+
+\section{CSS} 
+\label{sec:seccion6}
+(Contenido)
+
+\section{HTML5} 
+\label{sec:seccion7}
+(Contenido)
+
+\section{Bootstrap} 
+\label{sec:seccion8}
+(Contenido)
+
+\section{Ajax} 
+\label{sec:seccion9}
+(Contenido)
+
+\section{Javascript} 
+\label{sec:seccion10}
+(Contenido)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% DISE�O E IMPLEMENTACI�N %
+% DISEÑO E IMPLEMENTACIÓN %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cleardoublepage
-\chapter{Dise�o e implementaci�n}
-
+\chapter{Diseño e implementación}
+En este capítulo se detallarán la arquitectura y el diseño implementados en My App Inventor, relacionando las diferentes tecnologías utilizadas y explicando el flujo interno del programa.  
 \section{Arquitectura general} 
 \label{sec:arquitectura}
+La arquitectura de la aplicación se basa en el modelo cliente-servidor descrito en la figura~\ref{fig:arquitectura}. Una vez que el usuario ha entrado en su cuenta dentro de la web, tendrá dos opciones: volver a analizar un proyecto existente o subir el fichero comprimido \textit{.aia} que previamente ha descargado de la web de App Inventor\footnote{\url{http://appinventor.mit.edu/explore/}} y analizarlo. Ambas peticiones serán recogidas por el manejador Django que internamente realizará las acciones necesarias para obtener una evaluación del programa. Los resultados finales serán renderizados por BootStrap y mostrados al usuario en su navegador web. 
 
-figura~\ref{fig:arquitectura}.
+Como se puede observar en la siguiente figura tenemos dos componentes principales:
+\begin{itemize}
+		\item Servidor: compuesto por una aplicación Django y una base de datos SQLite. Mientras que Django realizará la interacción con la capa de Front End y realizará el análisis de los datos, la base de datos nos ayudará a almacenar la información relativa a los usuarios y sus proyectos.   
+		\item Cliente: el usuario accede a la aplicación mediante un navegador web desde el que se realizan las peticiones GET o POST (Http Request) y mostrará los datos recibidos desde el Servidor (HTTP Response). El desarrollo de esta parte del Front End se realiza a conjuntamente con Django y Bootstrap de manera que la web se adapta al dispositivo utilizado por el usuario (ordenador o móvil) 
+\end{itemize}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
-  \includegraphics[width=9cm, keepaspectratio]{img/arquitectura}
-  \caption{Estructura del parser b�sico}
+  \includegraphics[width=7cm, keepaspectratio]{img/arquitectura}
+  \caption{Arquitectura Cliente-Servidor}
   \label{fig:arquitectura}
 \end{figure}
 
+% DISEÑO E IMPLEMENTACIÓN DEL SERVIDOR %
+\section{Diseño e implementación del servidor} 
+\label{sec:arquitecturaServidor}
+Como hemos visto, la arquitectura del Servidor consta de dos grandes bloques: la lógica de Django y el almacenamiento de SQLite.  
+
+\subsection{Lógica servidor: Django}
+La lógica del proyecto My App Inventor está organizada en los siguientes directorios:
+\begin{itemize}
+	\item Projecto Django - \textbf{analyzeMyApp}: dentro nos encontraremos con los ficheros de configuración. En \textit{settings.py} indicaremos los parámetros principales del programa (directorios, idioma, base de datos \ldots), mientras que en \textit{wsgi.py} especificaremos las reglas de comunicación entre un servidor web y nuestra aplicación cuando despleguemos en producción. 
+	\item Aplicación - \textbf{myAnalyzer}: en este directorio guardaremos la lógica de la aplicación, es decir, qué hacer cuando recibimos una petición, cómo será nuestro modelo de datos, qué pasos seguir al analizar un fichero recibido\ldots. En las siguientes secciones veremos más en detalle este apartado.
+	\item Ficheros estáticos - \textbf{static}: donde están las imágenes, estilos CSS y pequeños JavaScript para utilizar con Bootstrap.  
+	\item Plantillas - \textbf{templates}: incluye todas las plantillas HTML que formarán parte de la interacción del usuario con la aplicación. 
+	\item Proyectos guardados - \textbf{saved\_projects}: además de guardar la información más relevante en base de datos, guardaremos una copia de seguridad de cada proyecto subido por el usuario en disco, así en caso de posibles ampliaciones de la lógica de evaluación, se podrá actualizar el resultado de forma transparente al usuario sin necesidad de que vuelva a cargar su programa de nuevo. 
+\end{itemize}  
+\begin{figure}[H]
+  \dirtree{%
+	.1 /.
+	.2 manage.py.
+	.2 analyzeMyApp.
+	.3 \_\_init\_\_.py.
+	.3 settings.py.
+	.3 urls.py.
+	.3 wsgi.py.
+	.2 myAnalyzer.
+	.3 \_\_init\_\_.py.
+	.3 admin.py.
+	.3 scoreMyAppMessages.py.
+	.3 admin.py.
+	.3 forms.py.
+	.3 models.py.
+	.3 urls.py.
+	.3 apps.py.
+	.3 scoreMyApp.py.
+	.3 parser.py.
+	.3 views.py.
+	.3 errors.py.
+	.3 tests.py.
+	.2 static.
+	.2 templates.
+	.2 saved\_projects.
+	}
+  \caption{Directorio de archivos My App Inventor}
+  \label{fig:dirarchivos}
+\end{figure}
+
+En líneas generales, el flujo de la aplicación sigue los pasos de la Figura~\ref{fig:flujoapp} y se define dentro del directorio \textbf{myAnalyzer}. Cuando un usuario registrado realiza una petición a la aplicación, se diferencia entre guardar un nuevo proyecto o cargar uno preexistente. Tras este paso, se procede al anáĺisis del programa y como paso final, se devuelve una respuesta con la clasificación obtenida. Durante todo el proceso, si se recibe una petición de un usuario no registrado, se redirige al mismo a la página de inicio. 
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[node distance = 3cm]
+	    % Place nodes
+	    \node [block] (init) {Petición de usuario};
+	    \node [decision, below of= init] (newproject) {¿Nuevo projecto?};
+	    \node (AuxNode01) [text width=4cm, below of=newproject] {};
+	    \node [block, right of=AuxNode01, node distance=3cm] (save) {Guardar en bbdd};
+	    \node [block, left of=AuxNode01, node distance=3cm] (load) {Leer de bbdd};
+	    \node [block, below of=AuxNode01] (analyze) {Analizar proyecto};
+	    \node [block, below of=analyze] (end) {Enviar resultados};
+	    % Draw edges
+	    \path [line] (init) -- (newproject);
+	    \path [line] (newproject) -| node [near start, above] {si} (save);
+	    \path [line] (newproject) -| node [near start, above]{no}(load);
+	    \path [line] (load) -- (analyze);
+	    \path [line] (save) -- (analyze);
+	    \path [line] (analyze) -- (end);
+  \end{tikzpicture}
+  \caption{Flujo principal My App Inventor}
+  \label{fig:flujoapp}
+\end{figure}
+En el momento en que la aplicación recibe una petición HTTP del usuario con una URL concreta, ésta se mapea en el fichero \textit{urls.py}. Éste a su vez redirige la información a un procedimiento concreto de \textit{wsgi.py} en función de la operación a realizar: iniciar o cerrar sesión, actualizar datos de perfil, cargar un nuevo programa, ver los anteriormente guardados \ldots No todas las URLs son accesibles al usuario mediante la petición GET; por ejemplo, sólo podremos acceder a la vista que analiza los proyectos del usuario,\textit{views.showUserAnalyzeProjectsPage}, mediante una petición de tipo POST insertada en un formulario de la aplicación para mantener la integridad de los datos recibidos y controlar su contenido. Lo mismo ocurre con la vista \textit{views.showDownloadPage} en la que se accede a la petición POST a través de un formulario.
+\begin{verbatim}
+urlpatterns = [
+               url(r'^login/', views.showLoginPage),
+               url(r'^logout/', views.showLogoutPage),
+               url(r'^createprofile/', views.showCreateProfilePage),
+               url(r'^userprofile/', views.showUserProfilePage),
+               url(r'^download/', views.showDownloadPage),
+               url(r'^updateprofile/', views.showUpdateProfilePage),
+               url(r'^userprojects/', views.showUserProjectsPage),
+               url(r'^analyze/', views.showUserAnalyzeProjectsPage),
+               url(r'^$', views.showLoginPage),
+               ]
+\end{verbatim}
+
+Veamos en más detalle los diferentes procedimientos implicados en el proceso global que forman parte de la aplicación.
+\subsubsection{Comunicación}
+Como hemos comentado anteriormente, si un usuario no inicia sesión en la aplicación, se le devolverá siempre a la página inicial. Entre todas las librerías (o \textit{views}) que incorpora Django, utilizaremos el Sistema de Autenticación \footnote{\url{https://docs.djangoproject.com/en/1.11/topics/auth/default/}} para complementar las vistas que nos ayudarán a realizar las operaciones más comunes como iniciar o cerrar sesión (\textit{views.showLoginPage, views.showLogoutPage}), mantener la misma entre peticiones al servidor o comprobar si un usuario está conectado. 
+
+Todas las peticiones se realizarán a través de los objetos HttpResponse \footnote{\url{https://docs.djangoproject.com/en/1.11/ref/request-response/}} de Django que manejan solicitudes GET y POST según corresponda. Por ejemplo, en la vista de inicio de sesión, se diferencia entre la solicitud de \textit{login} (GET), donde respondemos al usuario con un formulario en el que introducir sus datos de registro, y la recepción de los mismos en el método POST para autenticarle. 
+
+Tras el inicio de sesión, el usuario será redirigido a la página principal donde podrá evaluar su código en función de si ya está subido a la aplicación o no, como vimos en la Figura~\ref{fig:flujoapp}. 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth, keepaspectratio]{img/usercontent}
+  \caption{Opciones disponibles}
+  \label{fig:usercontent}
+\end{figure}
+
+Primero veamos el caso donde un programador quiere analizar su código por primera vez. La función \textit{views.showDownloadPage} devuelve en la primera petición (GET) un formulario en el que el usuario podrá buscar en su disco el fichero comprimido \textit{.aia} que previamente se ha descargado de su cuenta en App Inventor. Tras pulsar el botón Enviar, el navegador enviará una petición POST con el fichero al Servidor, donde se comprobará que no existe previamente para este usuario y descomprimirá, para posteriormente almacenar la información más relevante en base de datos. 
+
+La estructura en la que App Inventor guarda la información sigue el esquema descrito en la figura~\ref{fig:dirappinventor}. En la carpeta \textit{assets} se almacenan los ficheros estáticos de la aplicación, como las imágenes y sonidos. En \textit{project.properties} se especifica la configuración del proyecto: versión del código, primera pantalla, tamaño\ldots. Y finalmente en el último nivel del directorio \textit{src} se encuentran la información relativa a los bloques utilizados (*.scm) y las lógicas que los relacionan (*.bky) por pantallas. Los datos más importantes para My App Inventor se encuentran en este último nivel y por ello serán los que guardemos en base de datos para su posterior análisis. 
+
+\begin{figure}[H]
+  \dirtree{%
+	.1 /.
+	.2 assets.
+	.2 src.
+	.3 appinventor.
+	.4 settings.py.
+	.5 ai\_loginappinventor.
+	.6 nombrePrograma.
+	.7 fichero.bky.
+	.7 fichero.scm.
+	.7 \ldots.
+	.2 youngandroidproject.
+	.3 project.properties.
+	}
+  \caption{Directorio App Inventor}
+  \label{fig:dirappinventor}
+\end{figure}
+
+Si en un primer caso partíamos de un nuevo fichero de código, nuestra aplicación también permite al usuario guardar los proyectos guardados para poder volver a analizarlos en el futuro. Al llamar a la función \textit{views.showUserProjectsPage} el Servidor listará todos los programas almacenados para el usuario y éste podrá volver a obtener su clasificación. 
+
+Tanto si partimos de un código nuevo como de uno ya existente, la última operación que hace My App Inventor es analizar el código. ¿Y por qué analizar algo que ya está puntuado? Pensando en futuras mejoras e implementaciones del algoritmo de análisis, de esta forma hacemos posible que el usuario siempre tenga su disposición la última versión del mismo con la clasificación más actualizada. Así no es necesario preprocesar todos los programas en base de datos en caso de actualización ya que ésta se realiza bajo demanda.
+
+\subsubsection{Análisis de código}
+El análisis de los programas del usuario se realiza a tres niveles: componentes, programación y usabilidad, cada uno con sus correspondientes subniveles. Como habíamos comentado en la sección anterior, en base de datos tendremos la información principal de las pantallas que forman cada proyecto. Para cada pantalla tenemos:
+
+\begin{itemize}
+  \item Fichero \textbf{.scm}: contiene los bloques añadidos al proyecto y sus propiedades en formato JSON (JavaScript Object Notation)\footnote{\url{http://www.json.org/}}, un formato de representación de objetos con una estructura sencilla basada en relaciones nombre-valor. En función del bloque utilizado tendremos unas propiedades u otras: posición (\textit{AlignHorizontal}), fondo (\textit{BackgroundColor}), tamaño (\textit{Width}) \ldots 
+	\begin{figure}[H]
+	  \centering
+	  \includegraphics[width=\linewidth, keepaspectratio]{img/scmCode}
+	  \caption{Ejemplo fichero .scm}
+	  \label{fig:scmfile}
+	\end{figure}
+  \item Fichero \textbf{.bky}: en él se almacena en formato XML (Extensible Markup Language)\footnote{\url{https://www.w3.org/XML/}} todas las relaciones entre bloques activos y su funcionamiento. Será por tanto el principal fichero del que extraeremos la información estructural y funcional a analizar.
+	\begin{figure}[H]
+	  \centering
+	  \includegraphics[width=\linewidth, keepaspectratio]{img/bkyCode}
+	  \caption{Ejemplo fichero .bky}
+	  \label{fig:bkyfile}
+	\end{figure}
+\end{itemize}
+
+La función \textit{views.showUserAnalyzeProjectsPage} será la encargada de recibir la identificación del proyecto a analizar y responder al usuario con su evaluación. Tras consultar el contenido de las pantallas en base de datos, llamará a la función \textit{scoreMyApp.getScore} que será la encargada de analizar cada nivel individualmente. En este proceso, las funciones llamadas se han organizado en diferentes clases según su propósito:
+\begin{itemize}
+  \item \textbf{scoreMyApp}: contiene todas las funciones relativas a analizar el XML y obtener las estadísticas. Su función principal es \textit{scoreMyApp.getScore} y en esta sección nos centraremos en su análisis. 
+  \item \textbf{scoreMyAppMessages}: procesa las clasificaciones y genera mensajes personalizados para el usuario.
+\end{itemize}
+
+Dentro de \textit{scoreMyApp.getScore} analizaremos cada nivel pantalla por pantalla, comparando los resultados en cada iteración de forma que la estructura final contenga toda la información del programa. 
+\begin{verbatim}
+if componentLevels['Score'] > generalScore['ComponentLevels']['Score']:
+# Update
+generalScore['ComponentLevels']['Score'] = componentLevels['Score']
+
+G1 = generalScore['ComponentLevels']['L1_components']
+S1 = componentLevels['L1_components']
+generalScore['ComponentLevels']['L1_components'] = returnUnion(G1,S1,0)
+\end{verbatim}
+La clasificación se almacenará en un diccionario en el que guardaremos las estadísticas de cada nivel. Para obtener las puntuaciones individuales se obtiene una media con los niveles de las clasificaciones, mientras que la clasificación final es una media ponderada de los tres puntos a analizar. Los componentes utilizados y las habilidades de programación tienen un peso del 45\% cada uno en la media mientras que la usabilidad de la aplicación se lleva el 10\% restante al considerarse una característica a evaluar pero que no debe tener la misma importancia en la nota final. 
+\begin{figure}[H]
+	\begin{center}
+	    \begin{tabular}{| l | l | l | }
+	    \hline
+	    \textbf{Nivel} & \textbf{Subniveles} & \textbf{Ponderación} \\ \hline
+	    ComponentLevels & Score,L1\_components,L2\_components,L3\_components & 45\% \\ \hline
+	    ProgrammingLevels & Score,Flow,Data,Variable,Generalization & 45\% \\ \hline
+	    ScreensLevels & Score,Screens & 10\% \\ \hline
+            \end{tabular}
+	\end{center}
+	\caption{Estructura de la clasificación}
+	\label{fig:scoreStructure}
+\end{figure}
+
+Para la evaluación de los \textbf{componentes} se han clasificado en tres niveles todos los bloques disponibles en App Inventor en función de su nivel de complejidad, independientemente de su naturaleza. Por ejemplo, en el nivel Bajo nos encontramos con bloques tipo cuadro de texto y relojes, mientras que en el nivel Alto tenemos componentes de Lego Mindstorms o bases de datos experimentales como FirebaseDB. 
+
+\begin{figure}[H]
+	\begin{center}
+	    \begin{tabular}{| l | p{0.90\linewidth} | }
+	    \hline
+	    \textbf{Subnivel} & \textbf{Bloques} \\ \hline
+		Bajo & \textbf{InterfazUsuario} [Button CheckBox DatePicker Image Label ListPicker ListView Notifier Slider Spinner TextBox TimePicker] \textbf{Diseño} [HorizontalArrangement HorizontalScrollArrangement TableArrangement VerticalArrangement VerticalScrollArrangement] \textbf{Media} [ImagePicker] \textbf{Dibujo} [Ball Canvas ImageSprite] \textbf{Sensores} [Clock] \\ \hline
+		Medio & \textbf{InterfazUsuario} [PasswordTextBox WebViewer] \textbf{Media} [Camcorder Camera Player Sound SoundRecorder SpeechRecognizer TextToSpeech VideoPlayer YandexTranslate] \textbf{Sensores} [AccelerometerSensor BarcodeScanner OrientationSensor Pedometer] \textbf{Social} [ContactPicker EmailPicker PhoneCall PhoneNumberPicker Sharing Texting Twitter] \textbf{Almacenamiento} [File TinyDB] \textbf{Conectividad} [ActivityStarter BluetoothClient]\\ \hline
+		Alto & \textbf{Sensores} [GyroscopeSensor LocationSensor NearField ProximitySensor] \textbf{Almacenamiento} [FusionTablesControl TinyWebDB] \textbf{Conectividad} [BluethoothServer Web] \textbf{Lego} [NctDrive NctColorSensor NxtLightSensor NxtSoundSensor NxtTouchSensor NxtUltrasonicSensor NxtDirectCommands Ev3Motors Ev3ColorSensor Ev3GyroSensor Ev3TouchSensor Ev3UltrasonicSensor Ev3Sound Ev3UI Ev3Commands] \textbf{Experimental} [FirebaseDB]\\ \hline
+            \end{tabular}
+	\end{center}
+	\caption{Componentes: subniveles}
+	\label{fig:componentsScore}
+\end{figure}
+
+
+\textbf{programación}
+
+\textbf{usabilidad}
+
+\subsubsection{Envío de resultados}
+
+\subsection{Modelo de datos}
+
+
+% DISEÑO E IMPLENTACIÓN DEL CLIENTE %
+\section{Diseño e implementación del cliente} 
+\label{sec:arquitecturaCliente}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -379,23 +659,23 @@ figura~\ref{fig:arquitectura}.
 \label{chap:conclusiones}
 
 
-\section{Consecuci�n de objetivos}
+\section{Consecución de objetivos}
 \label{sec:consecucion-objetivos}
 
-Esta secci�n es la secci�n espejo de las dos primeras del cap�tulo de objetivos,
-donde se planteaba el objetivo general y se elaboraban los espec�ficos.
+Esta sección es la sección espejo de las dos primeras del capítulo de objetivos,
+donde se planteaba el objetivo general y se elaboraban los específicos.
 
-Es aqu� donde hay que debatir qu� se ha conseguido y qu� no. Cuando algo no
-se ha conseguido, se ha de justificar, en t�rminos de qu� problemas se han
-encontrado y qu� medidas se han tomado para mitigar esos problemas.
+Es aquí donde hay que debatir qué se ha conseguido y qué no. Cuando algo no
+se ha conseguido, se ha de justificar, en términos de qué problemas se han
+encontrado y qué medidas se han tomado para mitigar esos problemas.
 
 
-\section{Aplicaci�n de lo aprendido}
+\section{Aplicación de lo aprendido}
 \label{sec:aplicacion}
 
-Aqu� viene lo que has aprendido durante el Grado/M�ster y que has aplicado
-en el TFG/TFM. Una buena idea es poner las asignaturas m�s relacionadas y
-comentar en un p�rrafo los conocimientos y habilidades puestos en pr�ctica.
+Aquí viene lo que has aprendido durante el Grado/Máster y que has aplicado
+en el TFG/TFM. Una buena idea es poner las asignaturas más relacionadas y
+comentar en un párrafo los conocimientos y habilidades puestos en práctica.
 
 \begin{enumerate}
   \item a
@@ -406,7 +686,7 @@ comentar en un p�rrafo los conocimientos y habilidades puestos en pr�ctica.
 \section{Lecciones aprendidas}
 \label{sec:lecciones_aprendidas}
 
-Aqu� viene lo que has aprendido en el Trabajo Fin de Grado/M�ster.
+Aquí viene lo que has aprendido en el Trabajo Fin de Grado/Máster.
 
 \begin{enumerate}
   \item a
@@ -417,24 +697,24 @@ Aqu� viene lo que has aprendido en el Trabajo Fin de Grado/M�ster.
 \section{Trabajos futuros}
 \label{sec:trabajos_futuros}
 
-Ning�n software se termina, as� que aqu� vienen ideas y funcionalidades
-que estar�a bien tener implementadas en el futuro.
+Ningún software se termina, así que aquí vienen ideas y funcionalidades
+que estaría bien tener implementadas en el futuro.
 
 Es un apartado que sirve para dar ideas de cara a futuros TFGs/TFMs.
 
 
-\section{Valoraci�n personal}
+\section{Valoración personal}
 \label{sec:valoracion}
 
 Finalmente (y de manera opcional), hay gente que se anima a dar su punto de
-vista sobre el proyecto, lo que ha aprendido, lo que le gustar�a haber aprendido,
-las tecnolog�as utilizadas y dem�s.
+vista sobre el proyecto, lo que ha aprendido, lo que le gustaría haber aprendido,
+las tecnologías utilizadas y demás.
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% AP�NDICE(S) %
+% APÉNDICE(S) %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cleardoublepage
@@ -454,11 +734,11 @@ las tecnolog�as utilizadas y dem�s.
 % para incluir las citas en la memoria
 \bibliographystyle{abbrv}
 \bibliography{memoria}  % memoria.bib es el nombre del fichero que contiene
-% las referencias bibliogr�ficas. Abre ese fichero y mira el formato que tiene,
+% las referencias bibliográficas. Abre ese fichero y mira el formato que tiene,
 % que se conoce como BibTeX. Hay muchos sitios que exportan referencias en
 % formato BibTeX. Prueba a buscar en http://scholar.google.com por referencias
-% y ver�s que lo puedes hacer de manera sencilla.
-% M�s informaci�n: 
+% y verás que lo puedes hacer de manera sencilla.
+% Más información: 
 % http://texblog.org/2014/04/22/using-google-scholar-to-download-bibtex-citations/
 
 \end{document}
