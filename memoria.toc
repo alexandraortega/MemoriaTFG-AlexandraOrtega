@@ -24,15 +24,15 @@
 \contentsline {subsection}{\numberline {4.2.1}L\IeC {\'o}gica servidor: Django}{10}
 \contentsline {subsubsection}{Comunicaci\IeC {\'o}n}{13}
 \contentsline {subsubsection}{An\IeC {\'a}lisis de c\IeC {\'o}digo}{15}
-\contentsline {subsubsection}{Env\IeC {\'\i }o de resultados}{19}
-\contentsline {subsection}{\numberline {4.2.2}Modelo de datos}{19}
-\contentsline {section}{\numberline {4.3}Dise\IeC {\~n}o e implentaci\IeC {\'o}n del cliente}{19}
-\contentsline {chapter}{\numberline {5}Resultados}{21}
-\contentsline {chapter}{\numberline {6}Conclusiones}{23}
-\contentsline {section}{\numberline {6.1}Consecuci\IeC {\'o}n de objetivos}{23}
-\contentsline {section}{\numberline {6.2}Aplicaci\IeC {\'o}n de lo aprendido}{23}
-\contentsline {section}{\numberline {6.3}Lecciones aprendidas}{23}
-\contentsline {section}{\numberline {6.4}Trabajos futuros}{24}
-\contentsline {section}{\numberline {6.5}Valoraci\IeC {\'o}n personal}{24}
-\contentsline {chapter}{\numberline {A}Manual de usuario}{25}
-\contentsline {chapter}{Bibliograf\'{\i }a}{27}
+\contentsline {subsubsection}{Env\IeC {\'\i }o de resultados}{23}
+\contentsline {subsection}{\numberline {4.2.2}Modelo de datos}{27}
+\contentsline {section}{\numberline {4.3}Manual de Usuario}{30}
+\contentsline {chapter}{\numberline {5}Resultados}{31}
+\contentsline {chapter}{\numberline {6}Conclusiones}{33}
+\contentsline {section}{\numberline {6.1}Consecuci\IeC {\'o}n de objetivos}{33}
+\contentsline {section}{\numberline {6.2}Aplicaci\IeC {\'o}n de lo aprendido}{33}
+\contentsline {section}{\numberline {6.3}Lecciones aprendidas}{33}
+\contentsline {section}{\numberline {6.4}Trabajos futuros}{34}
+\contentsline {section}{\numberline {6.5}Valoraci\IeC {\'o}n personal}{34}
+\contentsline {chapter}{\numberline {A}Manual de usuario}{35}
+\contentsline {chapter}{Bibliograf\'{\i }a}{37}

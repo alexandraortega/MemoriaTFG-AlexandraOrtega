@@ -32,6 +32,8 @@
 \usepackage{latexsym}  %% Logo LaTeX
 \usepackage{dirtree}
 \usepackage{tikz}
+\usepackage{listings}
+
 
 \usetikzlibrary{shapes,arrows}
 \tikzstyle{decision} = [diamond, draw, 
@@ -50,6 +52,8 @@
 
 \renewcommand{\refname}{Bibliografía}  %% Renombrando
 \renewcommand{\appendixname}{Apéndice}
+
+\lstset{frame=L,breaklines=true,keepspaces=true,basicstyle=\footnotesize, language=Python,showstringspaces=false} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PORTADA
@@ -85,7 +89,7 @@ Trabajo Fin de Carrera
 \vspace{2.5cm}
 
 \LARGE
-MY APP ANALYZER
+MY APP ANALYZER: fomentando el desarrollo web entre los jóvenes
 
 \vspace{4cm}
 
@@ -113,7 +117,7 @@ Tutor : Dr. Gregorio Robles
 
 \vspace{1cm}
 \large
-My App Analyzer
+My App Analyzer: fomentando el desarrollo web entre los jóvenes
 
 \vspace{1cm}
 \large
@@ -501,7 +505,7 @@ En líneas generales, el flujo de la aplicación sigue los pasos de la Figura~\r
   \label{fig:flujoapp}
 \end{figure}
 En el momento en que la aplicación recibe una petición HTTP del usuario con una URL concreta, ésta se mapea en el fichero \textit{urls.py}. Éste a su vez redirige la información a un procedimiento concreto de \textit{wsgi.py} en función de la operación a realizar: iniciar o cerrar sesión, actualizar datos de perfil, cargar un nuevo programa, ver los anteriormente guardados \ldots No todas las URLs son accesibles al usuario mediante la petición GET; por ejemplo, sólo podremos acceder a la vista que analiza los proyectos del usuario,\textit{views.showUserAnalyzeProjectsPage}, mediante una petición de tipo POST insertada en un formulario de la aplicación para mantener la integridad de los datos recibidos y controlar su contenido. Lo mismo ocurre con la vista \textit{views.showDownloadPage} en la que se accede a la petición POST a través de un formulario.
-\begin{verbatim}
+\begin{lstlisting}
 urlpatterns = [
                url(r'^login/', views.showLoginPage),
                url(r'^logout/', views.showLogoutPage),
@@ -513,7 +517,7 @@ urlpatterns = [
                url(r'^analyze/', views.showUserAnalyzeProjectsPage),
                url(r'^$', views.showLoginPage),
                ]
-\end{verbatim}
+\end{lstlisting}
 
 Veamos en más detalle los diferentes procedimientos implicados en el proceso global que forman parte de la aplicación.
 \subsubsection{Comunicación}
@@ -577,14 +581,14 @@ El análisis de los programas del usuario se realiza a tres niveles: componentes
 	\end{figure}
 \end{itemize}
 
-La función \textit{views.showUserAnalyzeProjectsPage} será la encargada de recibir la identificación del proyecto a analizar y responder al usuario con su evaluación. Tras consultar el contenido de las pantallas en base de datos, llamará a la función \textit{scoreMyApp.getScore} que será la encargada de analizar cada nivel individualmente. En este proceso, las funciones llamadas se han organizado en diferentes clases según su propósito:
+La función \textit{views.showUserAnalyzeProjectsPage} será la encargada de recibir la identificación del proyecto a analizar y responder al usuario con su evaluación. Tras consultar el contenido de las pantallas en base de datos, llamará a la función \textit{scoreMyApp.getScore} que analizará cada nivel individualmente. En este proceso, las funciones llamadas se han organizado en diferentes clases según su propósito:
 \begin{itemize}
   \item \textbf{scoreMyApp}: contiene todas las funciones relativas a analizar el XML y obtener las estadísticas. Su función principal es \textit{scoreMyApp.getScore} y en esta sección nos centraremos en su análisis. 
   \item \textbf{scoreMyAppMessages}: procesa las clasificaciones y genera mensajes personalizados para el usuario.
 \end{itemize}
 
 Dentro de \textit{scoreMyApp.getScore} analizaremos cada nivel pantalla por pantalla, comparando los resultados en cada iteración de forma que la estructura final contenga toda la información del programa. 
-\begin{verbatim}
+\begin{lstlisting}
 if componentLevels['Score'] > generalScore['ComponentLevels']['Score']:
 # Update
 generalScore['ComponentLevels']['Score'] = componentLevels['Score']
@@ -592,8 +596,8 @@ generalScore['ComponentLevels']['Score'] = componentLevels['Score']
 G1 = generalScore['ComponentLevels']['L1_components']
 S1 = componentLevels['L1_components']
 generalScore['ComponentLevels']['L1_components'] = returnUnion(G1,S1,0)
-\end{verbatim}
-La clasificación se almacenará en un diccionario en el que guardaremos las estadísticas de cada nivel. Para obtener las puntuaciones individuales se obtiene una media con los niveles de las clasificaciones, mientras que la clasificación final es una media ponderada de los tres puntos a analizar. Los componentes utilizados y las habilidades de programación tienen un peso del 45\% cada uno en la media mientras que la usabilidad de la aplicación se lleva el 10\% restante al considerarse una característica a evaluar pero que no debe tener la misma importancia en la nota final. 
+\end{lstlisting}
+La clasificación se almacenará en un diccionario en el que guardaremos las estadísticas de cada nivel. Para obtener las puntuaciones individuales se obtiene una media con los niveles de las clasificaciones, mientras que la puntuación final es una media ponderada de los tres niveles a analizar. Los componentes utilizados y las habilidades de programación tienen un peso del 45\% cada uno en la media mientras que la usabilidad de la aplicación se lleva el 10\% restante al considerarse una característica a evaluar pero que no debe tener la misma importancia en la nota final pues es un concepto más de diseño que de habilidad en la programación.  
 \begin{figure}[H]
 	\begin{center}
 	    \begin{tabular}{| l | l | l | }
@@ -612,7 +616,7 @@ Para la evaluación de los \textbf{componentes} se han clasificado en tres nivel
 
 \begin{figure}[H]
 	\begin{center}
-	    \begin{tabular}{| l | p{0.90\linewidth} | }
+	    \begin{tabular}{| l | p{0.85\linewidth} | }
 	    \hline
 	    \textbf{Subnivel} & \textbf{Bloques} \\ \hline
 		Bajo & \textbf{InterfazUsuario} [Button CheckBox DatePicker Image Label ListPicker ListView Notifier Slider Spinner TextBox TimePicker] \textbf{Diseño} [HorizontalArrangement HorizontalScrollArrangement TableArrangement VerticalArrangement VerticalScrollArrangement] \textbf{Media} [ImagePicker] \textbf{Dibujo} [Ball Canvas ImageSprite] \textbf{Sensores} [Clock] \\ \hline
@@ -620,23 +624,282 @@ Para la evaluación de los \textbf{componentes} se han clasificado en tres nivel
 		Alto & \textbf{Sensores} [GyroscopeSensor LocationSensor NearField ProximitySensor] \textbf{Almacenamiento} [FusionTablesControl TinyWebDB] \textbf{Conectividad} [BluethoothServer Web] \textbf{Lego} [NctDrive NctColorSensor NxtLightSensor NxtSoundSensor NxtTouchSensor NxtUltrasonicSensor NxtDirectCommands Ev3Motors Ev3ColorSensor Ev3GyroSensor Ev3TouchSensor Ev3UltrasonicSensor Ev3Sound Ev3UI Ev3Commands] \textbf{Experimental} [FirebaseDB]\\ \hline
             \end{tabular}
 	\end{center}
-	\caption{Componentes: subniveles}
+	\caption{Componentes}
 	\label{fig:componentsScore}
 \end{figure}
 
+Una vez definidos los tres niveles, con la función \textit{scoreMyApp.componentLevels\_Score} buscaremos todas las ocurrencias de cada tipo de bloque dentro de la pantalla, guardando los resultados en tres diccionarios:
+\begin{lstlisting}
+L1_found = {'UserInterface': UserInterface_L1_found,
+                'Layout': Layout_L1_found,
+                'Media': Media_L1_found,
+                'Drawing': Drawing_L1_found,
+                'Sensors': Sensors_L1_found}
+    
+L2_found = {'UserInterface': UserInterface_L2_found,
+        'Media': Media_L2_found,
+        'Sensors': Sensors_L2_found,
+        'Social': Social_L2_found,
+        'Storage': Storage_L2_found,
+        'Connectivity':Connectivity_L2_found}
+    
+L3_found = {'Sensors': Sensors_L3_found,
+        'Storage': Storage_L3_found,
+        'Connectivity':Connectivity_L3_found,
+        'Lego':Lego_L3_found,
+        'Experimental':Experimental_L3_found}
+\end{lstlisting}
+Tras contabilizar el número de componentes total en cada subnivel, se asignará la puntuación de este módulo en función de la nota máxima alcanzada y guardaremos tanto la puntuación como el análisis para poder utilizarlos más adelante.   
+\begin{lstlisting}
+if c3 > 0 : # High score for complex components
+score = 3
+elif c2 > 0: # Medium score for complicated components
+score = 2
+else: # Low score for simple components
+score = 1
 
-\textbf{programación}
+results = {'Score':score,
+       'L1_components':L1_found,
+       'L2_components': L2_found,
+       'L3_components': L3_found}
+\end{lstlisting}
 
-\textbf{usabilidad}
+En la \textbf{programación} se revisarán competencias del usuario en distintas áreas de caracter abstracto como el control de flujo o el uso de funciones. Se han intentado agrupar a alto nivel las posibles etiquetas para poder organizarlas por funcionalidad y dentro de la misma, en los mínimos grupos, de manera que para cada subnivel tendremos siempre dos grupos globales que nos ayudarán a determinar la puntuación. 
+\begin{figure}[H]
+	\begin{center}
+	    \begin{tabular}{| l | p{0.80\linewidth} | }
+	    \hline
+	    \textbf{Subnivel} & \textbf{Identificadores} \\ \hline
+		Flow & component\_event controls\_ \\ \hline
+		Data & lists component\_set\_get \\ \hline
+		Variable & global\_declaration lexical\_variable\_get lexical\_variable\_set math\_ text\_ local\_declaration\_statement local\_declaration\_expression \\ \hline
+		Generalization & procedures\_ is\_generic \\ \hline
+            \end{tabular}
+	\end{center}
+	\caption{Programación}
+	\label{fig:programmingScore}
+\end{figure}
+\begin{itemize}
+  \item \textbf{Control de flujo} \textit{scoreMyApp.flow\_control}: identifica las expresiones lógicas para ejecutar ciclos, estructuras condicionales o eventos que dependen del comportamiento de otro componente o variable.
+	\begin{itemize}
+		\item Nivel alto: se incluyen expresiones lógicas y eventos dependientes. 
+		\item Nivel medio: se incluyen expresiones lógicas o eventos dependientes.
+		\item Nivel bajo: no incluye ningún control de flujo. 
+	\end{itemize}
+  \item \textbf{Gestión de datos} \textit{scoreMyApp.data\_control}: detecta el uso de listas para organización datos y asignación o modificación de valores a variables y componentes.
+	\begin{itemize}
+		\item Nivel alto: se incluyen listas y modificadores de variables. 
+		\item Nivel medio: se incluyen listas o modificadores de variables.
+		\item Nivel bajo: no se utilizan etiquetas de gestión de datos. 
+	\end{itemize}
+  \item \textbf{Representación de variables} \textit{scoreMyApp.variable\_control}: se tendrá en cuenta si el usuario utiliza declaraciones de variables tanto globales como locales y, en función del tipo de programa, expresiones matemáticas (sumas, potencias, operaciones de trigonometría\ldots) o expresiones relacionadas con textos (unión, convertir a mayúsculas, contiene\ldots).
+	\begin{itemize}
+		\item Nivel alto: se incluyen declaración de variables y funcionalidades de matemáticas o texto. 
+		\item Nivel medio: se incluyen declaración de variables o funcionalidades de matemáticas o texto.
+		\item Nivel bajo: no se utilizan métodos referenciados a variables. 
+	\end{itemize}
+  \item \textbf{Generalización} \textit{scoreMyApp.generalization\_control}: la optimización de código a través de funciones y la generalización de procesos para un mismo tipo de variable son características que todo buen programa debe tener ya que facilitan su lectura y permiten la reutilización procedimientos.   
+	\begin{itemize}
+		\item Nivel alto: se incluyen procedimientos y eventos genéricos para un mismo tipo de componente. 
+		\item Nivel medio: se incluyen procedimientos (en esta ocasión se ha considerado que el uso de procedimientos es una funcionalidad básica e imprescindible)
+		\item Nivel bajo: no se utiliza ningún tipo de mecanismo de generalización. 
+	\end{itemize}
+\end{itemize}
+Al igual que en el nivel anterior, se guardarán todas las estadísticas e identificadores obtenidos en un diccionario además de la nota media de todas las subcategorías:
+\begin{lstlisting}
+results = {'Score':score,
+       'Flow': flowCtrl,
+       'Data': dataCtrl,
+       'Variable': variableCtrl,
+       'Generalization': generalizationCtrl}
+\end{lstlisting}
 
+Por último analizaremos la \textbf{usabilidad} extrapolándola al número de pantallas que forman la aplicación. Una de la características de las aplicaciones actuales es su simplicidad para el usuario. Incluir gran cantidad de pantallería y opciones reduce su usabilidad al convertirla en poco intuitiva. Si queremos mejorar la experiencia de usuario conviene que nuestro programa tenga un número suficientemente bajo de pantallas para que resulte fácil de utilizar pero no sea excesivamente sencillo para que no pierda funcionalidad. Tras estudiar las aplicaciones existentes en el mercado, en este apartado se han definido los siguientes niveles dentro de la función \textit{scoreMyApp.nScreens\_control}:
+\begin{itemize}
+	\item Nivel alto: entre 3 y 10 pantallas distintas. Ejemplos: Twitter, Facebook, Instagram\ldots
+	\item Nivel medio: entre 1 y 3 pantallas. Ejemplos: Notas, Reloj, Calculadora
+	\item Nivel bajo: una única pantalla.  
+\end{itemize}
+
+Tras el análisis de los componentes, técnicas de programación y usabilidad para todas las pantallas que componen el programa a analizar, obtendremos el siguiente esquema de resultados recopilando la máxima información posible:
+\begin{figure}[H]
+  \dirtree{%
+	.1 GeneralScore.
+	.2 ComponentLevels.
+	.3 Score.
+	.3 L1\_components.
+	.3 L2\_components.
+	.3 L3\_components.
+	.2 ProgrammingLevels.
+	.3 Score.
+	.3 Flow.
+	.4 Component\_Events.
+	.4 Control.
+	.3 Data.
+	.4 Lists.
+	.4 ComponentSet.
+	.3 Variable.
+	.4 Variable.
+	.4 Math.
+	.4 Text.
+	.3 Generalization.
+	.4 Procs.
+	.4 Generic.
+	.2 ScreensLevels.	
+	.3 Score.
+	.3 Screens.
+	}
+  \caption{Resultados del análisis}
+  \label{fig:scoreAppInventor}
+\end{figure}
 \subsubsection{Envío de resultados}
+Volviendo a la vista encargada de obtener los resultados finales, \textit{views.showUserAnalyzeProjectsPage}, tras el análisis de los ficheros que componen el programa, llamaremos a las funciones de la clase \textit{scoreMyAppMessages}. En ella procesaremos toda la información y la mostraremos al usuario de forma intuitiva y simplificada a través de imágenes y mensajes de texto cortos. 
+ 
+Gracias a la función \textit{scoreMyAppMessages.getScoreMsgs} obtendremos todos los datos necesarios que queremos mostrar al usuario a partir de los resultados vistos en el apartado anterior:
+\begin{itemize}
+	\item Nivel global - \textit{general\_score\_msg}: a partir de la puntuación general tendremos un mensaje que resumirá el nivel promedio de la aplicación. 
+		\begin{lstlisting}
+# General Score message
+if score['Score'] == 3:
+	general_score_msg = 'Great job! Your app has a HIGH score! Check out the different skills to improve it even more'
+elif score['Score'] == 2:
+	general_score_msg = 'Great job! Your app has a MEDIUM score! Check out the different skills to reach the next level'
+else:
+	general_score_msg = 'Ups! Your app has a LOW score. Check out the different skills to improve it'
+		\end{lstlisting}
+	\item Nivel por categoría - \textit{comp\_score\_msg, progr\_score\_msg, sched\_score\_msg}: componentes, programación y usabilidad mostrarán un mensaje personalizado en función de la puntuación media de sus subniveles. 
+	\item Desglose de resultados por categoría - \textit{comp\_score\_info, progr\_score\_info, sched\_score\_info}: cada apartado incluirá la información más importante del mismo además de un consejo para mejorar el nivel actual. Dicho mensaje se mostrará siempre, pues aunque el usuario haya obtenido la máxima puntuación trataremos de motivarle para que incluya más complejidad a su programa o mayor diversidad de componentes. 
+	\begin{itemize}
+		\item Componentes: listará los bloques utilizados para conseguir este nivel.  
+		\begin{figure}[H]
+			  \centering
+			  \includegraphics[width=0.50\linewidth, keepaspectratio]{img/componentsScore}
+			  \caption{Resultados de la categoría Componentes}
+			  \label{fig:compResults}
+		\end{figure} 
+		\item Programación: resumirá por categorías todos los identificadores añadidos al código junto con el número de veces que se utilizan de forma que el usuario pueda tener una visión global la estructura de su programa.      
+		\begin{figure}[H]
+			  \centering
+			  \includegraphics[width=0.60\linewidth, keepaspectratio]{img/programmingScore}
+			  \caption{Resultados de la categoría Programación}
+			  \label{fig:progrResults}
+		\end{figure} 
+		\item Usabilidad: muestra el número de pantallas que forman el programa.       
+		\begin{figure}[H]
+			  \centering
+			  \includegraphics[width=0.50\linewidth, keepaspectratio]{img/schedScore}
+			  \caption{Resultados de la categoría Usabilidad}
+			  \label{fig:schedResults}
+		\end{figure} 
+	\end{itemize}
+\end{itemize}
+
+Una vez obtenidos todos los resultados, el siguiente pasó será enviarlos al navegador del usuario a través de la página \textit{analyzeAppCode.html}.En ésta se unen la mayoría de las tecnologías vistas en el capítulo Estado del Arte:
+\begin{itemize}
+	\item HTML: como estándar para definir la estructura básica del archivo, legible e interpretable por el navegador. Identificado en la siguiente etiqueta dentro del propio fichero:	
+		\begin{lstlisting}
+<!DOCTYPE html>
+		\end{lstlisting}
+	\item CSS: antes de enviar el archivo HMTL, parsearemos tanto los resultados del análisis como el estilo para integrarlos con el resto de valores de la página. Todos los formatos estarán definidos en diferentes ficheros .css almacenados estáticamente en el Servidor.  
+		\begin{lstlisting}
+{% load staticfiles %}
+
+...
+
+<link href="{% static 'css/agency.min.css' %}" rel="stylesheet">
+		\end{lstlisting}
+	\item JavaScript: gracias a este lenguaje de programación podemos implementar funciones dentro del HTML para que nuestra página sea más dinámica. Se utiliza por ejemplo, a la hora de ocultar o mostrar el menú:
+	\begin{lstlisting}
+... 
+
+// Highlight the top nav as scrolling occurs
+$('body').scrollspy({
+	target: '.navbar-fixed-top',
+	offset: 51 });
+
+// Closes the Responsive Menu on Menu Item Click
+$('.navbar-collapse ul li a').click(function(){ 
+    $('.navbar-toggle:visible').click(); });
+	\end{lstlisting}
+	\item Bootstrap: \textit{framework} que aúna el resto de tencnologías (HTML, CSS, JavaScript) y nos permite que la página se adapte a dispositivos móviles como se muestra en la figura~\ref{fig:dirappinventor}.
+		\begin{lstlisting}
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+		\end{lstlisting}
+		\begin{figure}[H]
+			  \centering
+			  \includegraphics[width=0.30\linewidth, keepaspectratio]{img/mobileVersion}
+			  \caption{Versión móvil con Bootstrap}
+			  \label{fig:mobileVersion}
+		\end{figure} 
+		\begin{figure}[H]
+			  \centering
+			  \includegraphics[width=\linewidth, keepaspectratio]{img/bootstrapDebug}
+			  \caption{Petición de Bootstrap desde el navegador}
+			  \label{fig:mobileVersion}
+		\end{figure} 
+
+\end{itemize}                                   
 
 \subsection{Modelo de datos}
+En la organización y uso de la información se han utilizado dos modelos en función de las características de los datos a guardar: 
+\begin{itemize}
+	\item Contenido no persistente: variables locales creadas durante la ejecución de los procesos en el servidor. 
+	\item Contenido persistente: base de datos SQLite\footnote{\url{https://www.sqlite.org}} y almacenamiento en memoria.
+\end{itemize}                                   
+
+Como vimos en la sección anterior, los datos dinámicos donde se almacenan los resultados tras el análisis de código se guardan en una variable de tipo diccionario, donde se organizarán en pares clave-valor. En ella tendremos acceso tanto a las puntuaciones como a las prácticas de programación que las originan, ambas respresentadas en la figura~\ref{fig:scoreAppInventor}.
+
+Por otro lado tendremos el almacenamiento en memoria estática de los programas subidos por cada usuario. Para ello se ha creado un sistema de directorios donde ir descargando el código y así poder tener acceso a él en el futuro en caso de actualizaciones del sistema de análisis. 
+
+Los datos relativos a la información de usuario o los proyectos guardados por el mismo se guardarán en una base de datos, definida dentro de la aplicación en las clases de \textit{models.py}. Para todo lo relativo a la creación y autenticación de usuarios, Django dispone de objetos predefinidos \footnote{\url{https://docs.djangoproject.com/en/1.11/topics/auth}} que se han reutilizado añadiendo nuevas características. Para el caso del objeto User, que por defecto incluye como atributos primarios \textit{username, password, email, first\_name} y \textit{last\_name}, se ha usado de modelo base para la clase \textit{UserProfile} extendiéndolo de forma que también incluya el campo \textit{appinventorLogin}, necesario en la extracción de los ficheros comprimidos subidos por el usuario.
+\begin{lstlisting}
+class UserProfile(models.Model):
+    user = models.OneToOneField(User)
+
+    # The additional attributes we wish to include.
+    appinventorLogin = models.CharField(max_length =254 )
+
+    # Override the __unicode__() method to return out something meaningful!
+    def __unicode__(self):
+        return self.user.username    
+\end{lstlisting}
+Para almacenar los usuarios existentes en la aplicación, sus proyectos y el contenido de los mismos se han creado las siguientes clases: 
+\begin{lstlisting}
+class Users(models.Model):
+    userID = models.IntegerField(primary_key=True) # user_id
+    projects = models.ManyToManyField('Projects') # The user can load and analyze multiple projects
+
+class Projects(models.Model):
+    projectName = models.TextField(primary_key=True) # user.id_filename.name
+    screens = models.ManyToManyField('Screens') # The project can include multiple screens
+    projectProperties = models.TextField() # Project properties
+    
+class Screens(models.Model):
+    scrID = models.TextField(primary_key=True) # user.id_filename.name_Screen number
+    bky = models.TextField() # Blockly info
+    scm = models.TextField() # Screen Description
+\end{lstlisting} 
+De esta forma un usuario puede tener varios proyectos que a su vez estarán compuestos por una o varias pantallas asociadas:
+\begin{figure}[H]
+  	\centering
+	\begin{tikzpicture}[node distance = 3cm]
+	    % Place nodes
+	    \node [block] (init) {Users};
+	    \node [block, below of=init] (project) {Projects};
+	    \node [block, below of=project] (screens) {Screens};
+	    % Draw edges
+	    \path [line] (init) -- (project);
+	    \path [line] (project) -- (screens);
+	\end{tikzpicture}
+	\caption{Modelo de datos}
+	\label{fig:databasemodel}
+\end{figure}
 
 
-% DISEÑO E IMPLENTACIÓN DEL CLIENTE %
-\section{Diseño e implementación del cliente} 
-\label{sec:arquitecturaCliente}
+% MANUAL DE USUARIO %
+\section{Manual de Usuario} 
+\label{sec:manualUsuario}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -741,4 +1004,4 @@ las tecnologías utilizadas y demás.
 % Más información: 
 % http://texblog.org/2014/04/22/using-google-scholar-to-download-bibtex-citations/
 
-\end{document}
+\end{document}L
