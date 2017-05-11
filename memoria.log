@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.30)  4 MAY 2017 01:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.30)  11 MAY 2017 23:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -738,6 +738,31 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count118
+\lst@gtempboxa=\box39
+\lst@token=\toks33
+\lst@length=\count119
+\lst@currlwidth=\dimen170
+\lst@column=\count120
+\lst@pos=\count121
+\lst@lostspace=\dimen171
+\lst@width=\dimen172
+\lst@newlines=\count122
+\lst@lineno=\count123
+\lst@maxwidth=\dimen173
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count124
+\lst@skipnumbers=\count125
+\lst@framebox=\box40
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryshapes.code.tex
 File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
@@ -789,26 +814,26 @@ File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
 s.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 
-\pgfnodepartlowerbox=\box39
-\pgfnodeparttwobox=\box40
-\pgfnodepartthreebox=\box41
-\pgfnodepartfourbox=\box42
-\pgfnodeparttwentybox=\box43
-\pgfnodepartnineteenbox=\box44
-\pgfnodeparteighteenbox=\box45
-\pgfnodepartseventeenbox=\box46
-\pgfnodepartsixteenbox=\box47
-\pgfnodepartfifteenbox=\box48
-\pgfnodepartfourteenbox=\box49
-\pgfnodepartthirteenbox=\box50
-\pgfnodeparttwelvebox=\box51
-\pgfnodepartelevenbox=\box52
-\pgfnodeparttenbox=\box53
-\pgfnodepartninebox=\box54
-\pgfnodeparteightbox=\box55
-\pgfnodepartsevenbox=\box56
-\pgfnodepartsixbox=\box57
-\pgfnodepartfivebox=\box58
+\pgfnodepartlowerbox=\box41
+\pgfnodeparttwobox=\box42
+\pgfnodepartthreebox=\box43
+\pgfnodepartfourbox=\box44
+\pgfnodeparttwentybox=\box45
+\pgfnodepartnineteenbox=\box46
+\pgfnodeparteighteenbox=\box47
+\pgfnodepartseventeenbox=\box48
+\pgfnodepartsixteenbox=\box49
+\pgfnodepartfifteenbox=\box50
+\pgfnodepartfourteenbox=\box51
+\pgfnodepartthirteenbox=\box52
+\pgfnodeparttwelvebox=\box53
+\pgfnodepartelevenbox=\box54
+\pgfnodeparttenbox=\box55
+\pgfnodepartninebox=\box56
+\pgfnodeparteightbox=\box57
+\pgfnodepartsevenbox=\box58
+\pgfnodepartsixbox=\box59
+\pgfnodepartfivebox=\box60
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryarrows.code.tex
@@ -817,26 +842,30 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
 tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
-\arrowsize=\dimen170
+\arrowsize=\dimen174
 )) (./memoria.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
+
+
+LaTeX Warning: Label `fig:mobileVersion' multiply defined.
+
 )
 \openout1 = `memoria.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 49.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 51.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
@@ -874,21 +903,21 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \. on input line 49.
-LaTeX Info: Redefining \% on input line 49.
+LaTeX Info: Redefining \. on input line 51.
+LaTeX Info: Redefining \% on input line 51.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count118
-\scratchdimen=\dimen171
-\scratchbox=\box59
-\nofMPsegments=\count119
-\nofMParguments=\count120
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count121
-\MPscratchDim=\dimen172
-\MPnumerator=\count122
-\makeMPintoPDFobject=\count123
-\everyMPtoPDFconversion=\toks34
+\scratchcounter=\count126
+\scratchdimen=\dimen175
+\scratchbox=\box61
+\nofMPsegments=\count127
+\nofMParguments=\count128
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count129
+\MPscratchDim=\dimen176
+\MPnumerator=\count130
+\makeMPintoPDFobject=\count131
+\everyMPtoPDFconversion=\toks35
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -934,13 +963,18 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
+\c@lstlisting=\count132
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 59.
+(Font)              <12> on input line 63.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 59.
+(Font)              <8> on input line 63.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 59.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 59.
+(Font)              <6> on input line 63.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 63.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -948,9 +982,9 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 <img/logo_vect.png, id=4, 169.8345pt x 338.2236pt>
 File: img/logo_vect.png Graphic file (type png)
  <use img/logo_vect.png>
-Package pdftex.def Info: img/logo_vect.png used on input line 61.
+Package pdftex.def Info: img/logo_vect.png used on input line 65.
 (pdftex.def)             Requested size: 42.45851pt x 84.5557pt.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 64.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 68.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
@@ -959,13 +993,13 @@ File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/logo_vect.png>] [2]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 107.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 111.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 112.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 116.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 120.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 124.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 130.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 134.
  [1
 
 
@@ -975,18 +1009,18 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 [2
 
 ] [3]
-LaTeX Info: Redefining \. on input line 176.
-LaTeX Info: Redefining \% on input line 176.
+LaTeX Info: Redefining \. on input line 180.
+LaTeX Info: Redefining \% on input line 180.
  [4
 
 ] [5]
-LaTeX Info: Redefining \. on input line 196.
-LaTeX Info: Redefining \% on input line 196.
+LaTeX Info: Redefining \. on input line 200.
+LaTeX Info: Redefining \% on input line 200.
  [6
 
 ] [7]
-LaTeX Info: Redefining \. on input line 216.
-LaTeX Info: Redefining \% on input line 216.
+LaTeX Info: Redefining \. on input line 220.
+LaTeX Info: Redefining \% on input line 220.
  [8
 
 ] (./memoria.toc
@@ -996,8 +1030,8 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@toc=\write4
 \openout4 = `memoria.toc'.
 
-LaTeX Info: Redefining \. on input line 218.
-LaTeX Info: Redefining \% on input line 218.
+LaTeX Info: Redefining \. on input line 222.
+LaTeX Info: Redefining \% on input line 222.
  [10] (./memoria.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -1009,26 +1043,26 @@ LaTeX Info: Redefining \% on input line 1.
 
 
 ]
-LaTeX Info: Redefining \. on input line 232.
-LaTeX Info: Redefining \% on input line 232.
+LaTeX Info: Redefining \. on input line 236.
+LaTeX Info: Redefining \% on input line 236.
 
 [12
 
 ]
 Cap\'{\i }tulo 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 240.
+(Font)              <7> on input line 244.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 240.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 240.
+(Font)              <5> on input line 244.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 244.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 242.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 246.
 
-Overfull \hbox (270.75592pt too wide) in paragraph at lines 248--248
+Overfull \hbox (270.75592pt too wide) in paragraph at lines 252--252
 [][]$\OT1/pcr/m/n/10 http : / / narrativabreve . com / 2015 / 02 / opiniones-[]
 de-[]un-[]corrector-[]de-[]estilo-[]11-[]recetas-[]para-[]escribir-[]correctame
 nte-[]la-[]coma .
@@ -1036,26 +1070,26 @@ nte-[]la-[]coma .
 
 
 Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 252.
+(pdftex.def)                using `viewport' instead on input line 256.
 
 <img/foro1.png, id=62, 803.0pt x 602.25pt>
 File: img/foro1.png Graphic file (type png)
  <use img/foro1.png>
-Package pdftex.def Info: img/foro1.png used on input line 252.
+Package pdftex.def Info: img/foro1.png used on input line 256.
 (pdftex.def)             Requested size: 341.43306pt x 256.06836pt.
  [1
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 295.
-LaTeX Info: Redefining \% on input line 295.
+LaTeX Info: Redefining \. on input line 299.
+LaTeX Info: Redefining \% on input line 299.
  [2 <./img/foro1.png>]
-LaTeX Info: Redefining \. on input line 311.
-LaTeX Info: Redefining \% on input line 311.
+LaTeX Info: Redefining \. on input line 315.
+LaTeX Info: Redefining \% on input line 315.
  [3]
-LaTeX Info: Redefining \. on input line 311.
-LaTeX Info: Redefining \% on input line 311.
+LaTeX Info: Redefining \. on input line 315.
+LaTeX Info: Redefining \% on input line 315.
  [4
 
 ]
@@ -1063,23 +1097,23 @@ Cap\'{\i }tulo 2.
 [5
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 345.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 349.
 
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 345.
-LaTeX Info: Redefining \. on input line 360.
-LaTeX Info: Redefining \% on input line 360.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 349.
+LaTeX Info: Redefining \. on input line 364.
+LaTeX Info: Redefining \% on input line 364.
  [6]
 Cap\'{\i }tulo 3.
 [7
 
 
 ]
-LaTeX Info: Redefining \. on input line 415.
-LaTeX Info: Redefining \% on input line 415.
+LaTeX Info: Redefining \. on input line 419.
+LaTeX Info: Redefining \% on input line 419.
  [8]
 Cap\'{\i }tulo 4.
 [9
@@ -1089,196 +1123,239 @@ Cap\'{\i }tulo 4.
 File: img/arquitectura.png Graphic file (type png)
 
 <use img/arquitectura.png>
-Package pdftex.def Info: img/arquitectura.png used on input line 430.
+Package pdftex.def Info: img/arquitectura.png used on input line 434.
 (pdftex.def)             Requested size: 199.16928pt x 156.42406pt.
-LaTeX Info: Redefining \. on input line 446.
-LaTeX Info: Redefining \% on input line 446.
+LaTeX Info: Redefining \. on input line 450.
+LaTeX Info: Redefining \% on input line 450.
  [10 <./img/arquitectura.png>]
-LaTeX Info: Redefining \. on input line 502.
-LaTeX Info: Redefining \% on input line 502.
+LaTeX Info: Redefining \. on input line 506.
+LaTeX Info: Redefining \% on input line 506.
  [11]
-LaTeX Info: Redefining \. on input line 504.
-LaTeX Info: Redefining \% on input line 504.
+LaTeX Info: Redefining \. on input line 508.
+LaTeX Info: Redefining \% on input line 508.
  [12]
-Overfull \hbox (34.35568pt too wide) in paragraph at lines 516--516
-[]               \OT1/pcr/m/n/12 url(r'^createprofile/', views.showCreateProfil
-ePage),[] 
- []
-
-
-Overfull \hbox (5.5557pt too wide) in paragraph at lines 516--516
-[]               \OT1/pcr/m/n/12 url(r'^userprofile/', views.showUserProfilePag
-e),[] 
- []
-
-
-Overfull \hbox (34.35568pt too wide) in paragraph at lines 516--516
-[]               \OT1/pcr/m/n/12 url(r'^updateprofile/', views.showUpdateProfil
-ePage),[] 
- []
-
-
-Overfull \hbox (19.95569pt too wide) in paragraph at lines 516--516
-[]               \OT1/pcr/m/n/12 url(r'^userprojects/', views.showUserProjectsP
-age),[] 
- []
-
-
-Overfull \hbox (34.35568pt too wide) in paragraph at lines 516--516
-[]               \OT1/pcr/m/n/12 url(r'^analyze/', views.showUserAnalyzeProject
-sPage),[] 
- []
-
 <img/usercontent.png, id=105, 1158.3275pt x 435.6275pt>
 File: img/usercontent.png Graphic file (type png)
 
 <use img/usercontent.png>
-Package pdftex.def Info: img/usercontent.png used on input line 528.
+Package pdftex.def Info: img/usercontent.png used on input line 532.
 (pdftex.def)             Requested size: 455.24411pt x 171.21017pt.
-LaTeX Info: Redefining \. on input line 531.
-LaTeX Info: Redefining \% on input line 531.
+LaTeX Info: Redefining \. on input line 536.
+LaTeX Info: Redefining \% on input line 536.
  [13]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 555.
-LaTeX Info: Redefining \% on input line 555.
+LaTeX Info: Redefining \. on input line 559.
+LaTeX Info: Redefining \% on input line 559.
  [14 <./img/usercontent.png>] <img/scmCode.png, id=114, 1204.5pt x 533.995pt>
 File: img/scmCode.png Graphic file (type png)
 
 <use img/scmCode.png>
-Package pdftex.def Info: img/scmCode.png used on input line 567.
+Package pdftex.def Info: img/scmCode.png used on input line 571.
 (pdftex.def)             Requested size: 455.24411pt x 201.82835pt.
-LaTeX Info: Redefining \. on input line 570.
-LaTeX Info: Redefining \% on input line 570.
+LaTeX Info: Redefining \. on input line 574.
+LaTeX Info: Redefining \% on input line 574.
  [15] <img/bkyCode.png, id=119, 1328.965pt x 581.17125pt>
 File: img/bkyCode.png Graphic file (type png)
 
 <use img/bkyCode.png>
-Package pdftex.def Info: img/bkyCode.png used on input line 574.
+Package pdftex.def Info: img/bkyCode.png used on input line 578.
 (pdftex.def)             Requested size: 455.24411pt x 199.08542pt.
-LaTeX Info: Redefining \. on input line 581.
-LaTeX Info: Redefining \% on input line 581.
+LaTeX Info: Redefining \. on input line 585.
+LaTeX Info: Redefining \% on input line 585.
  [16 <./img/scmCode.png> <./img/bkyCode.png>]
-Overfull \hbox (55.95567pt too wide) in paragraph at lines 595--595
-[]\OT1/pcr/m/n/12 if componentLevels['Score'] > generalScore['ComponentLevels']
-['Score']:[] 
- []
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 592.
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 592.
 
 
-Overfull \hbox (27.15569pt too wide) in paragraph at lines 595--595
-[]\OT1/pcr/m/n/12 generalScore['ComponentLevels']['Score'] = componentLevels['S
-core'][] 
- []
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlptm.fd
+File: omlptm.fd 
+)
+LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 592.
 
-
-Overfull \hbox (55.95567pt too wide) in paragraph at lines 595--595
-[]\OT1/pcr/m/n/12 generalScore['ComponentLevels']['L1_components'] = returnUnio
-n(G1,S1,0)[] 
- []
-
-
-Overfull \hbox (5.96065pt too wide) in paragraph at lines 599--606
+Overfull \hbox (5.96065pt too wide) in paragraph at lines 603--610
  [] 
  []
 
-LaTeX Info: Redefining \. on input line 610.
-LaTeX Info: Redefining \% on input line 610.
-[17]
-Underfull \hbox (badness 7308) in paragraph at lines 620--620
+
+Underfull \vbox (badness 6658) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 614.
+LaTeX Info: Redefining \% on input line 614.
+ [17]
+Underfull \hbox (badness 10000) in paragraph at lines 624--624
 []\OT1/ptm/b/n/12 Sensores \OT1/ptm/m/n/12 [Gy-ros-co-pe-Sen-sor Lo-ca-tion-Sen
--sor Near-Field Pro-xi-mity-Sen-sor] \OT1/ptm/b/n/12 Al-
+-sor Near-Field Pro-xi-mity-Sen-sor]
  []
 
 
-Underfull \hbox (badness 4205) in paragraph at lines 620--620
-\OT1/ptm/b/n/12 ma-ce-na-mien-to \OT1/ptm/m/n/12 [Fu-sion-Ta-bles-Con-trol Tiny
--WebDB] \OT1/ptm/b/n/12 Co-nec-ti-vi-dad \OT1/ptm/m/n/12 [Bluet-hooth-
+Underfull \hbox (badness 1466) in paragraph at lines 624--624
+\OT1/ptm/b/n/12 Al-ma-ce-na-mien-to \OT1/ptm/m/n/12 [Fu-sion-Ta-bles-Con-trol T
+iny-WebDB] \OT1/ptm/b/n/12 Co-nec-ti-vi-dad \OT1/ptm/m/n/12 [Bluet-
  []
 
 
-Underfull \hbox (badness 3919) in paragraph at lines 620--620
-\OT1/ptm/m/n/12 Ser-ver Web] \OT1/ptm/b/n/12 Le-go \OT1/ptm/m/n/12 [Nct-Dri-ve 
-Nct-Co-lor-Sen-sor NxtLightSen-sor Nx-tSound-Sen-
+Underfull \hbox (badness 10000) in paragraph at lines 624--624
+\OT1/ptm/m/n/12 Ev3ColorSensor Ev3GyroSensor Ev3TouchSensor Ev3UltrasonicSensor
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 620--620
-\OT1/ptm/m/n/12 sor Nxt-Touch-Sen-sor Nx-tUl-tra-so-nic-Sen-sor Nxt-Di-rect-Com
--mands Ev3Motors
- []
-
-
-Overfull \hbox (22.92023pt too wide) in paragraph at lines 615--622
- [] 
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 630.
 LaTeX Info: Redefining \% on input line 630.
-[18]
-LaTeX Info: Redefining \. on input line 646.
-LaTeX Info: Redefining \% on input line 646.
- [19]
-LaTeX Info: Redefining \. on input line 646.
-LaTeX Info: Redefining \% on input line 646.
- [20
+ [18]
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 633.
+LaTeX Info: Redefining \. on input line 643.
+LaTeX Info: Redefining \% on input line 643.
 
-]
+[19]
+Overfull \hbox (3.59563pt too wide) in paragraph at lines 670--678
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 683.
+LaTeX Info: Redefining \% on input line 683.
+ [20]
+LaTeX Info: Redefining \. on input line 700.
+LaTeX Info: Redefining \% on input line 700.
+
+[21]
+LaTeX Info: Redefining \. on input line 754.
+LaTeX Info: Redefining \% on input line 754.
+ [22]
+Overfull \hbox (45.01602pt too wide) in paragraph at lines 756--757
+[]\OT1/ptm/m/n/12 Volviendo a la vis-ta en-car-ga-da de ob-te-ner los re-sul-ta
+-dos fi-na-les, \OT1/ptm/m/it/12 views.showUserAnalyzeProjectsPage\OT1/ptm/m/n/
+12 ,
+ []
+
+LaTeX Info: Redefining \. on input line 763.
+LaTeX Info: Redefining \% on input line 763.
+[23]
+Overfull \hbox (7.8665pt too wide) in paragraph at lines 771--772
+[]\OT1/ptm/m/n/12 Desglose de re-sul-ta-dos por ca-te-gor[]^^Pa - \OT1/ptm/m/it
+/12 comp[]score[]info, progr[]score[]info, sched[]score[]info\OT1/ptm/m/n/12 :
+ []
+
+<img/componentsScore.png, id=148, 701.62125pt x 560.0925pt>
+File: img/componentsScore.png Graphic file (type png)
+
+<use img/componentsScore.png>
+Package pdftex.def Info: img/componentsScore.png used on input line 776.
+(pdftex.def)             Requested size: 227.62206pt x 181.70314pt.
+
+<img/programmingScore.png, id=149, 626.34pt x 630.355pt>
+File: img/programmingScore.png Graphic file (type png)
+
+<use img/programmingScore.png>
+Package pdftex.def Info: img/programmingScore.png used on input line 783.
+(pdftex.def)             Requested size: 273.14923pt x 274.90436pt.
+LaTeX Info: Redefining \. on input line 786.
+LaTeX Info: Redefining \% on input line 786.
+ [24 <./img/componentsScore.png>]
+<img/schedScore.png, id=154, 623.32875pt x 496.85625pt>
+File: img/schedScore.png Graphic file (type png)
+
+<use img/schedScore.png>
+Package pdftex.def Info: img/schedScore.png used on input line 790.
+(pdftex.def)             Requested size: 227.62206pt x 181.4382pt.
+LaTeX Info: Redefining \. on input line 798.
+LaTeX Info: Redefining \% on input line 798.
+ [25 <./img/programmingScore.png> <./img/schedScore.png>]
+LaTeX Info: Redefining \. on input line 828.
+LaTeX Info: Redefining \% on input line 828.
+ [26] <img/mobileVersion.png, id=163, 323.2075pt x 482.80376pt>
+File: img/mobileVersion.png Graphic file (type png)
+
+<use img/mobileVersion.png>
+Package pdftex.def Info: img/mobileVersion.png used on input line 831.
+(pdftex.def)             Requested size: 136.57462pt x 204.01384pt.
+
+<img/bootstrapDebug.png, id=164, 1120.185pt x 392.46625pt>
+File: img/bootstrapDebug.png Graphic file (type png)
+
+<use img/bootstrapDebug.png>
+Package pdftex.def Info: img/bootstrapDebug.png used on input line 837.
+(pdftex.def)             Requested size: 455.24411pt x 159.4989pt.
+LaTeX Info: Redefining \. on input line 848.
+LaTeX Info: Redefining \% on input line 848.
+ [27 <./img/mobileVersion.png> <./img/bootstrapDebug.png>]
+LaTeX Info: Redefining \. on input line 871.
+LaTeX Info: Redefining \% on input line 871.
+ [28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 909.
+LaTeX Info: Redefining \% on input line 909.
+ [29]
+LaTeX Info: Redefining \. on input line 909.
+LaTeX Info: Redefining \% on input line 909.
+
+[30]
 Cap\'{\i }tulo 5.
-[21
+[31
+
 
 ]
-LaTeX Info: Redefining \. on input line 657.
-LaTeX Info: Redefining \% on input line 657.
- [22
+LaTeX Info: Redefining \. on input line 920.
+LaTeX Info: Redefining \% on input line 920.
+ [32
 
 ]
 Cap\'{\i }tulo 6.
-
-Overfull \hbox (2.16516pt too wide) in paragraph at lines 676--679
-[]\OT1/ptm/m/n/12 Aqu[]^^P vie-ne lo que has apren-di-do du-ran-te el Gra-do/M[
-]aster y que has apli-ca-do en el TFG/TFM.
- []
-
-[23
+[33
 
 ]
-LaTeX Info: Redefining \. on input line 720.
-LaTeX Info: Redefining \% on input line 720.
- [24]
+LaTeX Info: Redefining \. on input line 983.
+LaTeX Info: Redefining \% on input line 983.
+ [34]
 Ap\IeC {\'e}ndice A.
-[25
+[35
 
 
 ]
-LaTeX Info: Redefining \. on input line 731.
-LaTeX Info: Redefining \% on input line 731.
- [26
+LaTeX Info: Redefining \. on input line 994.
+LaTeX Info: Redefining \% on input line 994.
+ [36
 
-] (./memoria.bbl) [27
+] (./memoria.bbl) [37
 
 ] (./memoria.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-) ) 
+)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 16023 strings out of 493029
- 331211 string characters out of 6136234
- 404139 words of memory out of 5000000
- 19198 multiletter control sequences out of 15000+600000
- 31782 words of font info for 63 fonts, out of 8000000 for 9000
+ 17971 strings out of 493029
+ 357031 string characters out of 6136234
+ 524110 words of memory out of 5000000
+ 21119 multiletter control sequences out of 15000+600000
+ 36170 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,13n,67p,906b,656s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
-imes/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on memoria.pdf (43 pages, 395351 bytes).
+ 55i,13n,67p,908b,1917s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
+mb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on memoria.pdf (53 pages, 742126 bytes).
 PDF statistics:
- 188 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
+ 233 PDF objects out of 1000 (max. 8388607)
+ 148 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 68 words of extra memory for PDF output out of 10000 (max. 10000000)
 
