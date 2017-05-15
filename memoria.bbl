@@ -1,8 +1,41 @@
 \begin{thebibliography}{1}
 
-\bibitem{bonabeau:_swarm}
-E.~Bonabeau, M.~Dorigo, and G.~Theraulaz.
-\newblock {\em Swarm Intelligence: From Natural to Articial Systems}.
-\newblock Oxford University Press, Inc., 1999.
+\bibitem{appinventordoc:_appinventordoc}
+{App} {Inventor}.
+\newblock \\ http://appinventor.mit.edu/explore/.
+
+\bibitem{bootdoc:_bootdoc}
+Bootstrap.
+\newblock \\ http://getbootstrap.com/.
+
+\bibitem{djangodoc:_djangodoc}
+{Documentación} {Django}.
+\newblock \\ https://www.djangoproject.com/.
+
+\bibitem{pythondoc:_pythondoc}
+{Documentación} {Python}.
+\newblock \\ https://www.python.org/.
+
+\bibitem{boottheme:_boottheme}
+{Plantilla} {Bootstrap}.
+\newblock \\ https://startbootstrap.com/.
+
+\bibitem{sqldoc:_sqldoc}
+Sqlite.
+\newblock \\ http://www.sqlite.org/.
+
+\bibitem{w3doc:_w3doc}
+W3schools.
+\newblock \\ https://www.w3schools.com/sql/.
+
+\bibitem{wwwdoc:_wwwdoc}
+{World} {Wide} {Web} {Consortium} {(W3C)}.
+\newblock \\ https://www.w3.org.
+
+\bibitem{walter:_learningGuide}
+M.~S. Derek~Walter.
+\newblock {\em Learning MIT App Inventor: A Hands-On Guide to Building Your Own
+  Android Apps}.
+\newblock Addison-Wesley Professional, 2014.
 
 \end{thebibliography}

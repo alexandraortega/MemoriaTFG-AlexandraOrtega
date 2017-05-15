@@ -56,6 +56,10 @@
 \lstset{frame=L,breaklines=true,keepspaces=true,basicstyle=\footnotesize, language=Python,showstringspaces=false} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BIBLIOGRAFIA
+\nocite{walter:_learningGuide,appinventordoc:_appinventordoc,pythondoc:_pythondoc,djangodoc:_djangodoc, w3doc:_w3doc,sqldoc:_sqldoc,wwwdoc:_wwwdoc,bootdoc:_bootdoc,boottheme:_boottheme}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PORTADA
 
 \begin{titlepage}
@@ -89,7 +93,7 @@ Trabajo Fin de Carrera
 \vspace{2.5cm}
 
 \LARGE
-MY APP ANALYZER: fomentando el desarrollo web entre los jóvenes
+MY APP ANALYZER: fomentando el desarrollo móvil entre los jóvenes
 
 \vspace{4cm}
 
@@ -117,7 +121,7 @@ Tutor : Dr. Gregorio Robles
 
 \vspace{1cm}
 \large
-My App Analyzer: fomentando el desarrollo web entre los jóvenes
+My App Analyzer: fomentando el desarrollo móvil entre los jóvenes
 
 \vspace{1cm}
 \large
@@ -238,6 +242,8 @@ just before submitting.
 \label{sec:intro} % etiqueta para poder referenciar luego en el texto con ~\ref{sec:intro}
 \pagenumbering{arabic} % para empezar la numeración de página con números
 
+
+COMENTAR TODA LA DOCUMENTACION QUE SAQUE AL PPIO SOBRE APPS
 En este capítulo se introduce el proyecto. Debería tener información general sobre 
 el mismo, dando la información sobre el contexto en el que se ha desarrollado.
 
@@ -363,54 +369,263 @@ La planificación temporal del proyecto ha sido definida en función de los obje
 
 \cleardoublepage
 \chapter{Estado del arte}
-
 En este capítulo se explicarán brevemente las principales tecnologías utilizadas en el proyecto.
-
-Puedes citar libros, como el de Bonabeau et al. sobre procesos estigmérgicos~\cite{bonabeau:_swarm}. % Nota que el ~ añade un espacio en blanco, pero no deja que exista un salto de línea. Imprescindible ponerlo para las citas.
-
-También existe la posibilidad de poner notas al pie de página, por ejemplo, 
-una para indicarte que visite la página de 
-LibreSoft\footnote{\url{http://www.libresoft.es}}.
-
 \section{App Inventor} 
 \label{sec:seccion1}
-(Contenido)
+MIT App Inventor es un entorno de desarrollo web para la creación de aplicaciones móviles basadas en el sistema Android. Su principal objetivo es democratizar la programación y acercarla al público más joven transformándolo de consumidor de tecnología, a creador de la misma.
+\begin{center}
+        \textit{'Anyone Can Build Apps That Impact the World'}
+\end{center}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.40\linewidth, keepaspectratio]{img/usesview}
+  \caption{Web App Inventor}
+  \label{fig:appinventorgallery}
+\end{figure}
+Gracias a su entorno gráfico sencillo e intuitivo, permite la construcción gratuita de programas reduciendo la curva de aprendizaje y eliminando barreras de entrada ya que para utilizarlo sólo es necesario un ordenador con internet y un móvil con sistema operativo Android. Pero además de las ventajas desde el punto de vista tecnológico también hay que añadir el componente social. En su web nos permiten no sólo subir el código sino que además se pueden ver y descargar gratuitamente los programas de otros usuarios para usarlos o modificarlos. Desde su creación en 2015 es utilizado en colegios para mejorar la visión lógica de los estudiantes y crear comunidades educativas que conectan a jóvenes de cualquier parte del mundo. 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.90\linewidth, keepaspectratio]{img/appinventorgallery}
+  \caption{Web App Inventor}
+  \label{fig:appinventorgallery}
+\end{figure} 
+Para poder utilizarlo hay que tener una cuenta de Google y entrar en su web\footnote{\url{http://appinventor.mit.edu/explore/}}. Tras iniciar sesión y seleccionar la aplicación, disponemos de dos herramientas: Designer y Blocks. Ambas funcionan con de la funcionalidad \textit{drag \& drop}, una vez decidido qué componente o bloque utilizar, lo arrastraremos hasta la previsualización de pantalla (\textit{Viewer}) para situarlo en una zona determinada o conectarlo con otros elementos.
+\subsection{App Inventor Designer} 
+En este apartado se construye la interfaz de usuario del programa, añadiendo y personalizando los componentes. 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth, keepaspectratio]{img/appDesigner}
+  \caption{Web App Inventor}
+  \label{fig:appinventorgallery}
+\end{figure}
+Incluye una amplia librería que nos permite escoger entre componentes de distinta complejidad y que serán objeto de análisis en nuestra aplicación como veremos en el siguiente capítulo:
+\begin{itemize}		
+\item \textit{User Interface}: botones, imágenes, casillas y todo tipo de elementos que forman parte de la interfaz de usuario y forman la estructura básica del programa.
+\item \textit{Layout}: crea secciones horizontales o verticales en la pantalla. 
+\item \textit{Media}: cámara de fotos o video, reproductor de audio, grabadora\ldots 
+\item \textit{Drawing and animation}: paneles de dibujo o delimitador de zonas para interactuar con el usuario a través de la pantalla táctil.
+\item \textit{Sensors}:	reloj, geolocalizador, podómetro, sensor de proximidad\ldots 
+\item \textit{Social}: permite acceder a la lista de contactos, compartir ficheros o texto e incluso conectarse a Twitter. 
+\item \textit{Storage}:	con gestores de ficheros y bases de datos.
+\item \textit{Connectivity}: creación de servidor/cliente de Bluetooth y posibilidad de realizar peticiones HTTP.	
+\item \textit{Lego Mindstorms}\footnote{\url{https://www.lego.com/en-gb/mindstorms/}}: interfaz de alto nivel para controlar los componentes de los robots Lego.
+\item \textit{Experimental}: como alternativa al almacenamiento de datos incluido en \textit{Storage}, se puede incluir Firebase\footnote{\url{https://firebase.google.com/}}, una base de datos creada por Google optimizada para dispositivos móviles.
+\item \textit{Extension}: importador de extensiones de terceros. 
+\end{itemize}
+\subsection{App Inventor Blocks} 
+Todo en App Inventor está causado por un evento: el click en un botón, la finalización de un reloj, el inicio de una conexión\ldots Tras crear la máscara de la aplicación con los componentes, la dotaremos de loǵica en la vista Blocks. 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth, keepaspectratio]{img/appBlock}
+  \caption{Web App Inventor}
+  \label{fig:appinventorgallery}
+\end{figure}
+Por pantalla podremos insertar: 
+\begin{itemize}	
+	\item \textit{Built-in}: bloques lógicos predefinidos que podemos combinar entre sí:
+		\begin{itemize}	
+		\item \textit{Control}: condicionales y bucles.
+		\item \textit{Logic}: comparadores, booleanos (\textit{Strue/false}) y puertas lógicas (\textit{and/or})	
+		\item \textit{Math}: operaciones matemáticas algebraicas y trigonométricas.	
+		\item \textit{Text}: funciones para variables tipo texto: contiene, logitud, concatenación\ldots	
+		\item \textit{Lists}: creación, consulta y modificación de listas de variables. 	
+		\item \textit{Colors}: selector de color.
+		\item \textit{Variables}: creación, inicialización y modificación de variables locales y globales.
+		\item \textit{Procedures}: definición de procedimientos
+		\end{itemize}
+	\item \textit{Screen}: gestión de eventos sobre los componentes añadidos en cada pantalla. 
+	\item \textit{Any Component}: gestión de eventos globales por componente. Por ejemplo, podemos definir una acción a ejecutar cuando se pulse un botón en cualquiera de las pantallas que componen el programa.  
+
+\end{itemize}
 
 \section{Python} 
 \label{sec:seccion2}
-(Contenido)
+Python es un potente lenguaje de progamación de alto nivel entre cuyas características principales destaca una: la sencillez. Gracias a su facilidad de uso y de lectura, cualquier programador puede entender su sintaxis y adaptarla a sus necesidades. Además es de código abierto y multiplataforma, es decir, puede redistribuirse gratuitamente en cualquier sistema operativo: Linux, Unix, Windows o MAC OS.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.70\linewidth, keepaspectratio]{img/codeval2016}
+  \caption{Lenguajes más importantes en 2016. Fuente: www.codeeval.com}
+  \label{fig:codeval2016}
+\end{figure}
+Algunas características a destacar:
+\begin{itemize}
+	\item Sintaxis sencilla: como hemos comentado, se busca una escritura simple, reduciendo caracteres redundantes y favoreciendo su interpretación rápida. Como ejemplo de ésto, la definición de los bloques por el nivel del sangrado (eliminando llaves o delimitadores de fin de instrucción) o la sustitución de los caracteres lógicos \&\&, \(\vert \vert\) y ! por palabras como \textit{and, or} y \textit{not}.   	
+	\item Incluye multitud de librerías optimizadas para reducir el código y el tiempo de ejecución.
+	\item Dinámicamente tipado: no es necesario definir los tipos de datos previamente sino que podemos ir añadiendo variables y automáticamente Python les asignará un tipo en función de su contenido. 
+	\item Fuertemente tipado: no convierte automáticamente unos tipos de datos en otros.
+	\item Incluye un modo interactivo donde poder ver el resultado de las instrucciones inmediatamente sin necesidad de compilar previamente el programa.
+	\item Soporta programación orientada a objetos.
+	\item Puede extenderse añadiendo módulos implementados en otros lenguajes como C o C++. 
+\end{itemize}
 
 \section{Django} 
 \label{sec:seccion3}
-(Contenido)
+Django es un framework de alto nivel escrito en Python para construir aplicaciones web de forma gratuita, sencilla y rápida. Incluye todas las librerías necesarias que pueden utilizarse en el desarrollo web, de manera que el programador sólo tiene que preocuparse en diseñar su aplicación sin necesidad de 'reinventar la rueda'.
 
+Principales características:
+\begin{itemize}
+	\item Rápido: las funciones están optimizadas para que su ejecución sea lo más rápida posible.
+	\item Seguro: ayuda a los desarrolladores a evitar los errores más comunes en seguridad.  
+	\item Escalable: es flexible y fácilmente escalable, adaptándose a las necesidades de la aplicación. 
+	\item Código abierto: el uso de funciones predefinidas no excluye que el programador tenga acceso a su contenido para reutilizar o modificarlas. Todo el ćodigo es accesible para los usuarios. 
+	\item Versátil: gracias a Django podemos crear todo tipo de aplicaciones como servidores de contenidos (\url{www.openstack.org}) o redes sociales(\url{www.instagram.com}).
+\end{itemize}
 \section{SQLite} 
 \label{sec:seccion4}
-(Contenido)
-
+SQLite es un sistema de gestión de bases de datos basado en el estándar SQL. Sus principales características son:
+\begin{itemize}
+	\item Trasacciones atómicas, consistencia, aislamiento, y durabilidad ante fallos de sistema. 
+	\item No necesita configuración previa para poder utilizarlo.
+	\item Multiplataforma: Android, BSD, iOS, Linux, Mac, Solaris, VxWorks y Windows
+	\item No es una parte independiente del programa con el que se comunica sino que se integra con él, reduciendo la latencia de acceso. La base de datos se guarda como un fichero estándar dentro del sistema. 
+	\item De dominio público. 
+\end{itemize}
 \section{HHTP} 
 \label{sec:seccion5}
-(Contenido)
-
-\section{CSS} 
-\label{sec:seccion6}
-(Contenido)
-
+HHTP son las siglas de Hypertext Transfer Protocol, un protocolo de comunicación web a nivel aplicación. Se utiliza en aplicaciones distribuidas y define los mensajes a intercambiar entre cliente y servidor dentro del protocolo pregunta/respuesta.  
+\begin{itemize}
+	\item No mantiene estado: no guarda información de conexiones anteriores. En caso de necesitar hacerlo se utilizan cookies, ficheros de información almacenados en el cliente por el servidor. 
+	\item Es colaborativo. 
+	\item Los mensajes enviados están escritos en texto plano y siguen la estructura:
+	\begin{itemize}
+		\item Método de petición + Url del recurso + versión HTTP del cliente. Concretamente en nuestra aplicación usaremos los métodos GET para petición simple de recursos (solicitar una página web) y POST para envío de datos de cara a su procesamiento (envío de datos de formulario). 
+		\item Cabecera con metadatos: idioma, tipo de servidor, fecha, cookie\ldots
+		\item Cuerpo con datos a intercambiar.
+	\end{itemize}	
+\end{itemize}
 \section{HTML5} 
+\label{sec:seccion6}
+\textit{HyperText Markup Language} o HTML es el lenguage estándar de la World Wide Web (WWW) en el que se define el formato para elaborar las páginas web. Está basado en ficheros de texto plano donde la interpretación del código recaerá sobre el navegador del cliente, que será el encargado de solicitar los recursos especificados y mostrar el contenido correctamente. 
+
+Los ficheros HTML utilizan etiquetas y atributos para identificar cada elemento del documento:
+\begin{lstlisting}[language=HTML]
+<!DOCTYPE HTML> 
+<html>
+  <head>
+    <title>App Inventor Analyzer</title>
+  </head>
+  <body>
+    <p>Cuerpo de la web</p>
+  </body>
+</html>
+\end{lstlisting}
+Actualmente se encuentra en la versión 5 cuyas principales novedades permiten mayor dinamismo en las páginas web: etiquetas para 2D y 3D, generación de tablas dinámicas, nuevos tipos de datos en formularios o funcionalidad Drag \& Drop. 
+\section{CSS} 
 \label{sec:seccion7}
-(Contenido)
-
-\section{Bootstrap} 
+\textit{Cascading Style Sheets} o CSS es un lenguaje de diseño gráfico utilizado para dar estilo a ficheros HTML y XML. A través de la separación entre contenido y formato permiten eliminar líneas redundantes en los documentos, realizar modificaciones globales más fácilmente y adaptar la visualización para diferentes métodos de renderizado. 
+Para utilizar CSS se necesita:
+ 	\begin{itemize}	
+		\item Fichero .css: en el se definen las reglas mediante pares selector - bloque de declaración.
+		\begin{lstlisting}[language=HTML]
+header .intro-text .intro-heading {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 25px;}
+		\end{lstlisting}
+		\item Fichero .html: donde se identifican los elementos a formatear con el selector especificado en el fichero .css.
+		\begin{lstlisting}[language=HTML]
+<div class="intro-text">
+	<div class="intro-lead-in">Welcome to MIT App Inventor Analyzer</div>
+	<div class="intro-heading">It's Nice To Meet You</div>
+	<a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+</div>
+		\end{lstlisting}
+	\end{itemize}
+\section{JavaScript} 
 \label{sec:seccion8}
-(Contenido)
-
-\section{Ajax} 
+JavaScript es un lenguaje de programación interpretado utilizado principalmente en el lado del cliente para añadir dinamismo a las páginas web mostradas por el navegador. Al ser interpretado, no necesita ser compilado previamente ya que se interpreta a tiempo real, mejorando la eficiencia de las aplicaciones. 
+\section{Bootstrap} 
 \label{sec:seccion9}
-(Contenido)
-
-\section{Javascript} 
+Bootstrap es un framework de código abierto para el desarrollo de páginas y aplicaciones web creado por desarrolladores de Twitter. Este conjunto de herramientas une las tecnologías HTML, CSS, y Javascript para adaptar dinámicamente el formato de las webs al dispositivo utilizado (ordenador, tableta o móvil).
+La estructura básica de Bootstrap sigue el sistema de ficheros de la figura~\ref{fig:dirarchivosBoot}. En ella podemos ver cómo los ficheros CSS y JavaScript base vienen incluidos en su versión normal (*.css) y minificada (*.min.css). Esta última es una compresión en la que se eliminan caracteres innecesarios en el código como espacios o saltos de línea, y su objetivo es reducir el tiempo de procesado de los ficheros por el navegador. 
+\begin{figure}[H]
+  \dirtree{%
+	.1 bootstrap.
+	.2 css.
+	.3 bootstrap.css.
+	.3 bootstrap.min.css.
+	.2 js.
+	.3 bootstrap.js.
+	.3 bootstrap.min.js.
+	.2 img.
+	.3 glyphicons-halflings.png.
+	.3 glyphicons-halflings-white.png.
+	}
+  \caption{Directorio de archivos Bootstrap}
+  \label{fig:dirarchivosBoot}
+\end{figure}
+\begin{figure}[H]
+	\begin{center}
+	    \begin{tabular}{ p{0.50\linewidth} p{0.50\linewidth}  }
+	    \hline
+	    \textbf{HTML simple} & \textbf{HTML con Bootstrap}  \\ \hline
+	    	\begin{lstlisting}[language=HTML]
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap 101 Template</title>
+</head>
+<body>
+<h1>Hello, world!</h1>
+<script src="http://code.jquery.com/jquery.js"></script>
+</body>
+</html>
+		\end{lstlisting} & 
+	    	\begin{lstlisting}[language=HTML]
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap 101 Template</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<h1>Hello, world!</h1>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+		\end{lstlisting}\\ 
+            \end{tabular}
+	\end{center}
+	\caption{HTML simple VS. con Bootstrap }
+	\label{fig:htmlcomparison}
+\end{figure}
+\section{Ajax} 
 \label{sec:seccion10}
-(Contenido)
+\textit{Asynchronous JavaScript And XML} o AJAX es una técnica de desarrollo asíncrona para actualización de páginas web bajo petición sin necesidad de recargarlas completamente, lo que mejora la eficiencia de las aplicaciones. Utilizando AJAX podemos utilizar varias tecnologías: HTML (datos), CSS (estilo), Document Object Model o DOM (actualización dinámica de contenido), HTMLHttpRequest (petición al servidor) y XML (formato de envío de información).
+
+En nuestra aplicación My App Inventor podemos ver un ejemplo de esta tecnología en la plantilla \textit{userprofile.html} donde actualizaremos el contenido de la página en función de la opción escogida por el usuario: ver lista de proyectos, guardar un nuevo proyecto o actualizar perfil.
+\vspace{5mm}
+\begin{lstlisting}[language=HTML]
+
+<a class="page-scroll" href="#usercontent" onclick="loadUserProjects()">
+	My proyects</a>
+<a class="page-scroll" href="#usercontent" onclick="loadNewProject()"">
+	Add New</a>
+<a class="page-scroll" href="#usercontent" onclick="loadUpdateProfile()">
+	Update profile</a>
+
+...
+
+<!-- Load UserProjects JavaScript -->
+<script>
+function loadUserProjects() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("usercontent").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "/userprojects/", true);
+  xhttp.send();
+}
+</script>
+\end{lstlisting}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DISEÑO E IMPLEMENTACIÓN %
@@ -431,7 +646,7 @@ Como se puede observar en la siguiente figura tenemos dos componentes principale
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=7cm, keepaspectratio]{img/arquitectura}
+  \includegraphics[width=0.70\linewidth, keepaspectratio]{img/arquitectura}
   \caption{Arquitectura Cliente-Servidor}
   \label{fig:arquitectura}
 \end{figure}
@@ -797,11 +1012,11 @@ else:
 Una vez obtenidos todos los resultados, el siguiente pasó será enviarlos al navegador del usuario a través de la página \textit{analyzeAppCode.html}.En ésta se unen la mayoría de las tecnologías vistas en el capítulo Estado del Arte:
 \begin{itemize}
 	\item HTML: como estándar para definir la estructura básica del archivo, legible e interpretable por el navegador. Identificado en la siguiente etiqueta dentro del propio fichero:	
-		\begin{lstlisting}
+		\begin{lstlisting}[language=HTML]
 <!DOCTYPE html>
 		\end{lstlisting}
 	\item CSS: antes de enviar el archivo HMTL, parsearemos tanto los resultados del análisis como el estilo para integrarlos con el resto de valores de la página. Todos los formatos estarán definidos en diferentes ficheros .css almacenados estáticamente en el Servidor.  
-		\begin{lstlisting}
+		\begin{lstlisting}[language=HTML]
 {% load staticfiles %}
 
 ...
@@ -809,7 +1024,7 @@ Una vez obtenidos todos los resultados, el siguiente pasó será enviarlos al na
 <link href="{% static 'css/agency.min.css' %}" rel="stylesheet">
 		\end{lstlisting}
 	\item JavaScript: gracias a este lenguaje de programación podemos implementar funciones dentro del HTML para que nuestra página sea más dinámica. Se utiliza por ejemplo, a la hora de ocultar o mostrar el menú:
-	\begin{lstlisting}
+	\begin{lstlisting}[language=HTML]
 ... 
 
 // Highlight the top nav as scrolling occurs
