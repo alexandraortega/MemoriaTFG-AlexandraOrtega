@@ -9,30 +9,32 @@
 \contentsline {section}{\numberline {2.3}Planificaci\IeC {\'o}n temporal}{6}
 \contentsline {chapter}{\numberline {3}Estado del arte}{7}
 \contentsline {section}{\numberline {3.1}App Inventor}{7}
-\contentsline {section}{\numberline {3.2}Python}{7}
-\contentsline {section}{\numberline {3.3}Django}{7}
-\contentsline {section}{\numberline {3.4}SQLite}{8}
-\contentsline {section}{\numberline {3.5}HHTP}{8}
-\contentsline {section}{\numberline {3.6}CSS}{8}
-\contentsline {section}{\numberline {3.7}HTML5}{8}
-\contentsline {section}{\numberline {3.8}Bootstrap}{8}
-\contentsline {section}{\numberline {3.9}Ajax}{8}
-\contentsline {section}{\numberline {3.10}Javascript}{8}
-\contentsline {chapter}{\numberline {4}Dise\IeC {\~n}o e implementaci\IeC {\'o}n}{9}
-\contentsline {section}{\numberline {4.1}Arquitectura general}{9}
-\contentsline {section}{\numberline {4.2}Dise\IeC {\~n}o e implementaci\IeC {\'o}n del servidor}{10}
-\contentsline {subsection}{\numberline {4.2.1}L\IeC {\'o}gica servidor: Django}{10}
-\contentsline {subsubsection}{Comunicaci\IeC {\'o}n}{13}
-\contentsline {subsubsection}{An\IeC {\'a}lisis de c\IeC {\'o}digo}{15}
-\contentsline {subsubsection}{Env\IeC {\'\i }o de resultados}{23}
-\contentsline {subsection}{\numberline {4.2.2}Modelo de datos}{27}
-\contentsline {section}{\numberline {4.3}Manual de Usuario}{30}
-\contentsline {chapter}{\numberline {5}Resultados}{31}
-\contentsline {chapter}{\numberline {6}Conclusiones}{33}
-\contentsline {section}{\numberline {6.1}Consecuci\IeC {\'o}n de objetivos}{33}
-\contentsline {section}{\numberline {6.2}Aplicaci\IeC {\'o}n de lo aprendido}{33}
-\contentsline {section}{\numberline {6.3}Lecciones aprendidas}{33}
-\contentsline {section}{\numberline {6.4}Trabajos futuros}{34}
-\contentsline {section}{\numberline {6.5}Valoraci\IeC {\'o}n personal}{34}
-\contentsline {chapter}{\numberline {A}Manual de usuario}{35}
-\contentsline {chapter}{Bibliograf\'{\i }a}{37}
+\contentsline {subsection}{\numberline {3.1.1}App Inventor Designer}{8}
+\contentsline {subsection}{\numberline {3.1.2}App Inventor Blocks}{10}
+\contentsline {section}{\numberline {3.2}Python}{11}
+\contentsline {section}{\numberline {3.3}Django}{13}
+\contentsline {section}{\numberline {3.4}SQLite}{13}
+\contentsline {section}{\numberline {3.5}HHTP}{14}
+\contentsline {section}{\numberline {3.6}HTML5}{14}
+\contentsline {section}{\numberline {3.7}CSS}{15}
+\contentsline {section}{\numberline {3.8}JavaScript}{16}
+\contentsline {section}{\numberline {3.9}Bootstrap}{16}
+\contentsline {section}{\numberline {3.10}Ajax}{17}
+\contentsline {chapter}{\numberline {4}Dise\IeC {\~n}o e implementaci\IeC {\'o}n}{19}
+\contentsline {section}{\numberline {4.1}Arquitectura general}{19}
+\contentsline {section}{\numberline {4.2}Dise\IeC {\~n}o e implementaci\IeC {\'o}n del servidor}{20}
+\contentsline {subsection}{\numberline {4.2.1}L\IeC {\'o}gica servidor: Django}{20}
+\contentsline {subsubsection}{Comunicaci\IeC {\'o}n}{23}
+\contentsline {subsubsection}{An\IeC {\'a}lisis de c\IeC {\'o}digo}{25}
+\contentsline {subsubsection}{Env\IeC {\'\i }o de resultados}{33}
+\contentsline {subsection}{\numberline {4.2.2}Modelo de datos}{37}
+\contentsline {section}{\numberline {4.3}Manual de Usuario}{40}
+\contentsline {chapter}{\numberline {5}Resultados}{41}
+\contentsline {chapter}{\numberline {6}Conclusiones}{43}
+\contentsline {section}{\numberline {6.1}Consecuci\IeC {\'o}n de objetivos}{43}
+\contentsline {section}{\numberline {6.2}Aplicaci\IeC {\'o}n de lo aprendido}{43}
+\contentsline {section}{\numberline {6.3}Lecciones aprendidas}{43}
+\contentsline {section}{\numberline {6.4}Trabajos futuros}{44}
+\contentsline {section}{\numberline {6.5}Valoraci\IeC {\'o}n personal}{44}
+\contentsline {chapter}{\numberline {A}Manual de usuario}{45}
+\contentsline {chapter}{Bibliograf\'{\i }a}{47}
