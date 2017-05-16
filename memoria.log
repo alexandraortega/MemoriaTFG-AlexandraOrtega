@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.30)  15 MAY 2017 23:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.30)  17 MAY 2017 01:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1056,6 +1056,8 @@ LaTeX Info: Redefining \% on input line 240.
 
 [12]
 Cap\'{\i }tulo 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 248.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 250.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -1065,38 +1067,35 @@ LaTeX Font Info:    Try loading font information for OT1+pcr on input line 250.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 252.
+<img/logoProgramm.jpg, id=62, 1015.795pt x 738.76pt>
+File: img/logoProgramm.jpg Graphic file (type jpg)
 
-Overfull \hbox (270.75592pt too wide) in paragraph at lines 258--258
-[][]$\OT1/pcr/m/n/10 http : / / narrativabreve . com / 2015 / 02 / opiniones-[]
-de-[]un-[]corrector-[]de-[]estilo-[]11-[]recetas-[]para-[]escribir-[]correctame
-nte-[]la-[]coma .
- []
-
-
-Package pdftex.def Warning: Option `bb' does not make sense,
-(pdftex.def)                using `viewport' instead on input line 262.
-
-<img/foro1.png, id=62, 803.0pt x 602.25pt>
-File: img/foro1.png Graphic file (type png)
- <use img/foro1.png>
-Package pdftex.def Info: img/foro1.png used on input line 262.
-(pdftex.def)             Requested size: 341.43306pt x 256.06836pt.
+<use img/logoProgramm.jpg>
+Package pdftex.def Info: img/logoProgramm.jpg used on input line 254.
+(pdftex.def)             Requested size: 273.14923pt x 198.64496pt.
  [1
 
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<img/DrScratch.png, id=67, 1140.26pt x 626.34pt>
+File: img/DrScratch.png Graphic file (type png)
+ <use img/DrScratch.png>
+Package pdftex.def Info: img/DrScratch.png used on input line 262.
+(pdftex.def)             Requested size: 318.66948pt x 175.03949pt.
+LaTeX Info: Redefining \. on input line 268.
+LaTeX Info: Redefining \% on input line 268.
 
-LaTeX Info: Redefining \. on input line 305.
-LaTeX Info: Redefining \% on input line 305.
- [2 <./img/foro1.png>]
-LaTeX Info: Redefining \. on input line 321.
-LaTeX Info: Redefining \% on input line 321.
- [3]
-LaTeX Info: Redefining \. on input line 321.
-LaTeX Info: Redefining \% on input line 321.
+[2 <./img/logoProgramm.jpg> <./img/DrScratch.png>]
+Overfull \hbox (0.48634pt too wide) in paragraph at lines 275--276
+[]\OT1/ptm/m/n/12 Introducci[]on: pre-sen-ta-ci[]on del tra-ba-jo y del con-tex
+-to so-cial en el que se desa-rro-lla, adem[]as
+ []
+
+LaTeX Info: Redefining \. on input line 295.
+LaTeX Info: Redefining \% on input line 295.
+[3]
+LaTeX Info: Redefining \. on input line 295.
+LaTeX Info: Redefining \% on input line 295.
  [4
 
 ]
@@ -1104,75 +1103,75 @@ Cap\'{\i }tulo 2.
 [5
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 355.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 329.
 
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 355.
-LaTeX Info: Redefining \. on input line 370.
-LaTeX Info: Redefining \% on input line 370.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 329.
+LaTeX Info: Redefining \. on input line 344.
+LaTeX Info: Redefining \% on input line 344.
  [6]
 Cap\'{\i }tulo 3.
-<img/usesview.png, id=85, 299.1175pt x 224.84pt>
+<img/usesview.png, id=87, 299.1175pt x 224.84pt>
 File: img/usesview.png Graphic file (type png)
  <use img/usesview.png>
-Package pdftex.def Info: img/usesview.png used on input line 381.
+Package pdftex.def Info: img/usesview.png used on input line 355.
 (pdftex.def)             Requested size: 182.09486pt x 136.87773pt.
 
-<img/appinventorgallery.png, id=87, 1377.145pt x 614.295pt>
+<img/appinventorgallery.png, id=88, 1377.145pt x 614.295pt>
 File: img/appinventorgallery.png Graphic file (type png)
 
 <use img/appinventorgallery.png>
-Package pdftex.def Info: img/appinventorgallery.png used on input line 388.
+Package pdftex.def Info: img/appinventorgallery.png used on input line 362.
 (pdftex.def)             Requested size: 409.71692pt x 182.76205pt.
  [7
 
 
  <./img/usesview.png>]
-<img/appDesigner.png, id=92, 1362.08875pt x 664.4825pt>
+<img/appDesigner.png, id=93, 1362.08875pt x 664.4825pt>
 File: img/appDesigner.png Graphic file (type png)
 
 <use img/appDesigner.png>
-Package pdftex.def Info: img/appDesigner.png used on input line 397.
+Package pdftex.def Info: img/appDesigner.png used on input line 371.
 (pdftex.def)             Requested size: 455.24411pt x 222.08844pt.
 
 Underfull \vbox (badness 4805) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 401.
-LaTeX Info: Redefining \% on input line 401.
+LaTeX Info: Redefining \. on input line 375.
+LaTeX Info: Redefining \% on input line 375.
  [8 <./img/appinventorgallery.png>]
-LaTeX Info: Redefining \. on input line 412.
-LaTeX Info: Redefining \% on input line 412.
+LaTeX Info: Redefining \. on input line 386.
+LaTeX Info: Redefining \% on input line 386.
  [9 <./img/appDesigner.png>]
-<img/appBlock.png, id=102, 1377.145pt x 658.46pt>
+<img/appBlock.png, id=103, 1377.145pt x 658.46pt>
 File: img/appBlock.png Graphic file (type png)
  <use img/appBlock.png>
-Package pdftex.def Info: img/appBlock.png used on input line 419.
+Package pdftex.def Info: img/appBlock.png used on input line 393.
 (pdftex.def)             Requested size: 455.24411pt x 217.66422pt.
-LaTeX Info: Redefining \. on input line 430.
-LaTeX Info: Redefining \% on input line 430.
+LaTeX Info: Redefining \. on input line 404.
+LaTeX Info: Redefining \% on input line 404.
 
 [10 <./img/appBlock.png>]
-<img/codeval2016.png, id=107, 615.29875pt x 398.48875pt>
+<img/codeval2016.png, id=108, 615.29875pt x 398.48875pt>
 File: img/codeval2016.png Graphic file (type png)
 
 <use img/codeval2016.png>
-Package pdftex.def Info: img/codeval2016.png used on input line 446.
+Package pdftex.def Info: img/codeval2016.png used on input line 420.
 (pdftex.def)             Requested size: 318.66948pt x 206.38232pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 450.
-LaTeX Info: Redefining \% on input line 450.
+LaTeX Info: Redefining \. on input line 424.
+LaTeX Info: Redefining \% on input line 424.
  [11]
-LaTeX Info: Redefining \. on input line 464.
-LaTeX Info: Redefining \% on input line 464.
+LaTeX Info: Redefining \. on input line 438.
+LaTeX Info: Redefining \% on input line 438.
 
 [12 <./img/codeval2016.png>]
-LaTeX Info: Redefining \. on input line 486.
-LaTeX Info: Redefining \% on input line 486.
+LaTeX Info: Redefining \. on input line 460.
+LaTeX Info: Redefining \% on input line 460.
  [13]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
@@ -1180,113 +1179,113 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 502.
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 476.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlptm.fd
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 502.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 476.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 502.
-LaTeX Info: Redefining \. on input line 509.
-LaTeX Info: Redefining \% on input line 509.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 476.
+LaTeX Info: Redefining \. on input line 483.
+LaTeX Info: Redefining \% on input line 483.
  [14]
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 520.
-LaTeX Info: Redefining \. on input line 539.
-LaTeX Info: Redefining \% on input line 539.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 494.
+LaTeX Info: Redefining \. on input line 513.
+LaTeX Info: Redefining \% on input line 513.
  [15]
-Overfull \hbox (24.0pt too wide) in paragraph at lines 561--592
+Overfull \hbox (24.0pt too wide) in paragraph at lines 535--566
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 596.
-LaTeX Info: Redefining \% on input line 596.
+LaTeX Info: Redefining \. on input line 570.
+LaTeX Info: Redefining \% on input line 570.
  [16]
-LaTeX Info: Redefining \. on input line 604.
-LaTeX Info: Redefining \% on input line 604.
+LaTeX Info: Redefining \. on input line 578.
+LaTeX Info: Redefining \% on input line 578.
 
 [17]
-LaTeX Info: Redefining \. on input line 634.
-LaTeX Info: Redefining \% on input line 634.
+LaTeX Info: Redefining \. on input line 608.
+LaTeX Info: Redefining \% on input line 608.
  [18]
 Cap\'{\i }tulo 4.
 [19
 
 
-] <img/arquitectura.png, id=138, 799.98875pt x 407.5225pt>
+] <img/arquitectura.png, id=139, 799.98875pt x 407.5225pt>
 File: img/arquitectura.png Graphic file (type png)
 
 <use img/arquitectura.png>
-Package pdftex.def Info: img/arquitectura.png used on input line 649.
+Package pdftex.def Info: img/arquitectura.png used on input line 623.
 (pdftex.def)             Requested size: 318.66948pt x 162.33453pt.
-LaTeX Info: Redefining \. on input line 665.
-LaTeX Info: Redefining \% on input line 665.
+LaTeX Info: Redefining \. on input line 639.
+LaTeX Info: Redefining \% on input line 639.
  [20 <./img/arquitectura.png>]
-LaTeX Info: Redefining \. on input line 721.
-LaTeX Info: Redefining \% on input line 721.
+LaTeX Info: Redefining \. on input line 695.
+LaTeX Info: Redefining \% on input line 695.
  [21]
-LaTeX Info: Redefining \. on input line 723.
-LaTeX Info: Redefining \% on input line 723.
+LaTeX Info: Redefining \. on input line 697.
+LaTeX Info: Redefining \% on input line 697.
  [22]
-<img/usercontent.png, id=150, 1158.3275pt x 435.6275pt>
+<img/usercontent.png, id=151, 1158.3275pt x 435.6275pt>
 File: img/usercontent.png Graphic file (type png)
 
 <use img/usercontent.png>
-Package pdftex.def Info: img/usercontent.png used on input line 747.
+Package pdftex.def Info: img/usercontent.png used on input line 721.
 (pdftex.def)             Requested size: 455.24411pt x 171.21017pt.
-LaTeX Info: Redefining \. on input line 751.
-LaTeX Info: Redefining \% on input line 751.
+LaTeX Info: Redefining \. on input line 725.
+LaTeX Info: Redefining \% on input line 725.
  [23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 774.
-LaTeX Info: Redefining \% on input line 774.
- [24 <./img/usercontent.png>] <img/scmCode.png, id=158, 1204.5pt x 533.995pt>
+LaTeX Info: Redefining \. on input line 748.
+LaTeX Info: Redefining \% on input line 748.
+ [24 <./img/usercontent.png>] <img/scmCode.png, id=159, 1204.5pt x 533.995pt>
 File: img/scmCode.png Graphic file (type png)
 
 <use img/scmCode.png>
-Package pdftex.def Info: img/scmCode.png used on input line 786.
+Package pdftex.def Info: img/scmCode.png used on input line 760.
 (pdftex.def)             Requested size: 455.24411pt x 201.82835pt.
-LaTeX Info: Redefining \. on input line 789.
-LaTeX Info: Redefining \% on input line 789.
- [25] <img/bkyCode.png, id=162, 1328.965pt x 581.17125pt>
+LaTeX Info: Redefining \. on input line 763.
+LaTeX Info: Redefining \% on input line 763.
+ [25] <img/bkyCode.png, id=163, 1328.965pt x 581.17125pt>
 File: img/bkyCode.png Graphic file (type png)
 
 <use img/bkyCode.png>
-Package pdftex.def Info: img/bkyCode.png used on input line 793.
+Package pdftex.def Info: img/bkyCode.png used on input line 767.
 (pdftex.def)             Requested size: 455.24411pt x 199.08542pt.
-LaTeX Info: Redefining \. on input line 800.
-LaTeX Info: Redefining \% on input line 800.
+LaTeX Info: Redefining \. on input line 774.
+LaTeX Info: Redefining \% on input line 774.
  [26 <./img/scmCode.png> <./img/bkyCode.png>]
-Overfull \hbox (5.96065pt too wide) in paragraph at lines 818--825
+Overfull \hbox (5.96065pt too wide) in paragraph at lines 792--799
  [] 
  []
 
 
 Underfull \vbox (badness 6658) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 829.
-LaTeX Info: Redefining \% on input line 829.
+LaTeX Info: Redefining \. on input line 803.
+LaTeX Info: Redefining \% on input line 803.
  [27]
-Underfull \hbox (badness 10000) in paragraph at lines 839--839
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
 []\OT1/ptm/b/n/12 Sensores \OT1/ptm/m/n/12 [Gy-ros-co-pe-Sen-sor Lo-ca-tion-Sen
 -sor Near-Field Pro-xi-mity-Sen-sor]
  []
 
 
-Underfull \hbox (badness 1466) in paragraph at lines 839--839
+Underfull \hbox (badness 1466) in paragraph at lines 813--813
 \OT1/ptm/b/n/12 Al-ma-ce-na-mien-to \OT1/ptm/m/n/12 [Fu-sion-Ta-bles-Con-trol T
 iny-WebDB] \OT1/ptm/b/n/12 Co-nec-ti-vi-dad \OT1/ptm/m/n/12 [Bluet-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 839--839
+Underfull \hbox (badness 10000) in paragraph at lines 813--813
 \OT1/ptm/m/n/12 Ev3ColorSensor Ev3GyroSensor Ev3TouchSensor Ev3UltrasonicSensor
 
  []
@@ -1294,97 +1293,97 @@ Underfull \hbox (badness 10000) in paragraph at lines 839--839
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 845.
-LaTeX Info: Redefining \% on input line 845.
+LaTeX Info: Redefining \. on input line 819.
+LaTeX Info: Redefining \% on input line 819.
  [28]
-LaTeX Info: Redefining \. on input line 858.
-LaTeX Info: Redefining \% on input line 858.
+LaTeX Info: Redefining \. on input line 832.
+LaTeX Info: Redefining \% on input line 832.
 
 [29]
-Overfull \hbox (3.59563pt too wide) in paragraph at lines 885--893
+Overfull \hbox (3.59563pt too wide) in paragraph at lines 859--867
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 898.
-LaTeX Info: Redefining \% on input line 898.
+LaTeX Info: Redefining \. on input line 872.
+LaTeX Info: Redefining \% on input line 872.
  [30]
-LaTeX Info: Redefining \. on input line 915.
-LaTeX Info: Redefining \% on input line 915.
+LaTeX Info: Redefining \. on input line 889.
+LaTeX Info: Redefining \% on input line 889.
 
 [31]
-LaTeX Info: Redefining \. on input line 969.
-LaTeX Info: Redefining \% on input line 969.
+LaTeX Info: Redefining \. on input line 943.
+LaTeX Info: Redefining \% on input line 943.
  [32]
-Overfull \hbox (45.01602pt too wide) in paragraph at lines 971--972
+Overfull \hbox (45.01602pt too wide) in paragraph at lines 945--946
 []\OT1/ptm/m/n/12 Volviendo a la vis-ta en-car-ga-da de ob-te-ner los re-sul-ta
 -dos fi-na-les, \OT1/ptm/m/it/12 views.showUserAnalyzeProjectsPage\OT1/ptm/m/n/
 12 ,
  []
 
-LaTeX Info: Redefining \. on input line 978.
-LaTeX Info: Redefining \% on input line 978.
+LaTeX Info: Redefining \. on input line 952.
+LaTeX Info: Redefining \% on input line 952.
 [33]
-Overfull \hbox (7.8665pt too wide) in paragraph at lines 986--987
+Overfull \hbox (7.8665pt too wide) in paragraph at lines 960--961
 []\OT1/ptm/m/n/12 Desglose de re-sul-ta-dos por ca-te-gor[]^^Pa - \OT1/ptm/m/it
 /12 comp[]score[]info, progr[]score[]info, sched[]score[]info\OT1/ptm/m/n/12 :
  []
 
-<img/componentsScore.png, id=191, 701.62125pt x 560.0925pt>
+<img/componentsScore.png, id=192, 701.62125pt x 560.0925pt>
 File: img/componentsScore.png Graphic file (type png)
 
 <use img/componentsScore.png>
-Package pdftex.def Info: img/componentsScore.png used on input line 991.
+Package pdftex.def Info: img/componentsScore.png used on input line 965.
 (pdftex.def)             Requested size: 227.62206pt x 181.70314pt.
 
-<img/programmingScore.png, id=192, 626.34pt x 630.355pt>
+<img/programmingScore.png, id=193, 626.34pt x 630.355pt>
 File: img/programmingScore.png Graphic file (type png)
 
 <use img/programmingScore.png>
-Package pdftex.def Info: img/programmingScore.png used on input line 998.
+Package pdftex.def Info: img/programmingScore.png used on input line 972.
 (pdftex.def)             Requested size: 273.14923pt x 274.90436pt.
-LaTeX Info: Redefining \. on input line 1001.
-LaTeX Info: Redefining \% on input line 1001.
+LaTeX Info: Redefining \. on input line 975.
+LaTeX Info: Redefining \% on input line 975.
  [34 <./img/componentsScore.png>]
-<img/schedScore.png, id=198, 623.32875pt x 496.85625pt>
+<img/schedScore.png, id=199, 623.32875pt x 496.85625pt>
 File: img/schedScore.png Graphic file (type png)
 
 <use img/schedScore.png>
-Package pdftex.def Info: img/schedScore.png used on input line 1005.
+Package pdftex.def Info: img/schedScore.png used on input line 979.
 (pdftex.def)             Requested size: 227.62206pt x 181.4382pt.
-LaTeX Info: Redefining \. on input line 1013.
-LaTeX Info: Redefining \% on input line 1013.
+LaTeX Info: Redefining \. on input line 987.
+LaTeX Info: Redefining \% on input line 987.
  [35 <./img/programmingScore.png> <./img/schedScore.png>]
-LaTeX Info: Redefining \. on input line 1043.
-LaTeX Info: Redefining \% on input line 1043.
- [36] <img/mobileVersion.png, id=207, 323.2075pt x 482.80376pt>
+LaTeX Info: Redefining \. on input line 1017.
+LaTeX Info: Redefining \% on input line 1017.
+ [36] <img/mobileVersion.png, id=208, 323.2075pt x 482.80376pt>
 File: img/mobileVersion.png Graphic file (type png)
 
 <use img/mobileVersion.png>
-Package pdftex.def Info: img/mobileVersion.png used on input line 1046.
+Package pdftex.def Info: img/mobileVersion.png used on input line 1020.
 (pdftex.def)             Requested size: 136.57462pt x 204.01384pt.
 
-<img/bootstrapDebug.png, id=208, 1120.185pt x 392.46625pt>
+<img/bootstrapDebug.png, id=209, 1120.185pt x 392.46625pt>
 File: img/bootstrapDebug.png Graphic file (type png)
 
 <use img/bootstrapDebug.png>
-Package pdftex.def Info: img/bootstrapDebug.png used on input line 1052.
+Package pdftex.def Info: img/bootstrapDebug.png used on input line 1026.
 (pdftex.def)             Requested size: 455.24411pt x 159.4989pt.
-LaTeX Info: Redefining \. on input line 1063.
-LaTeX Info: Redefining \% on input line 1063.
+LaTeX Info: Redefining \. on input line 1037.
+LaTeX Info: Redefining \% on input line 1037.
  [37 <./img/mobileVersion.png> <./img/bootstrapDebug.png>]
-LaTeX Info: Redefining \. on input line 1086.
-LaTeX Info: Redefining \% on input line 1086.
+LaTeX Info: Redefining \. on input line 1060.
+LaTeX Info: Redefining \% on input line 1060.
  [38]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 1124.
-LaTeX Info: Redefining \% on input line 1124.
+LaTeX Info: Redefining \. on input line 1098.
+LaTeX Info: Redefining \% on input line 1098.
  [39]
-LaTeX Info: Redefining \. on input line 1124.
-LaTeX Info: Redefining \% on input line 1124.
+LaTeX Info: Redefining \. on input line 1098.
+LaTeX Info: Redefining \% on input line 1098.
 
 [40]
 Cap\'{\i }tulo 5.
@@ -1392,8 +1391,8 @@ Cap\'{\i }tulo 5.
 
 
 ]
-LaTeX Info: Redefining \. on input line 1135.
-LaTeX Info: Redefining \% on input line 1135.
+LaTeX Info: Redefining \. on input line 1109.
+LaTeX Info: Redefining \% on input line 1109.
  [42
 
 ]
@@ -1401,19 +1400,26 @@ Cap\'{\i }tulo 6.
 [43
 
 ]
-LaTeX Info: Redefining \. on input line 1198.
-LaTeX Info: Redefining \% on input line 1198.
+LaTeX Info: Redefining \. on input line 1136.
+LaTeX Info: Redefining \% on input line 1136.
  [44]
-Ap\IeC {\'e}ndice A.
-[45
-
-
-]
-LaTeX Info: Redefining \. on input line 1209.
-LaTeX Info: Redefining \% on input line 1209.
+LaTeX Info: Redefining \. on input line 1158.
+LaTeX Info: Redefining \% on input line 1158.
+ [45]
+LaTeX Info: Redefining \. on input line 1158.
+LaTeX Info: Redefining \% on input line 1158.
  [46
 
-] (./memoria.bbl) [47
+]
+Ap\IeC {\'e}ndice A.
+[47
+
+]
+LaTeX Info: Redefining \. on input line 1169.
+LaTeX Info: Redefining \% on input line 1169.
+ [48
+
+] (./memoria.bbl) [49
 
 ] (./memoria.aux
 LaTeX Info: Redefining \. on input line 15.
@@ -1424,10 +1430,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18208 strings out of 493029
- 360190 string characters out of 6136234
- 529567 words of memory out of 5000000
- 21347 multiletter control sequences out of 15000+600000
+ 18213 strings out of 493029
+ 360324 string characters out of 6136234
+ 529597 words of memory out of 5000000
+ 21350 multiletter control sequences out of 15000+600000
  36170 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,13n,67p,908b,2068s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1439,10 +1445,10 @@ urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
 mb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on memoria.pdf (63 pages, 2005348 bytes).
+Output written on memoria.pdf (65 pages, 2859323 bytes).
 PDF statistics:
- 276 PDF objects out of 1000 (max. 8388607)
- 170 compressed objects within 2 object streams
+ 283 PDF objects out of 1000 (max. 8388607)
+ 174 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
 
