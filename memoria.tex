@@ -242,73 +242,47 @@ just before submitting.
 \label{sec:intro} % etiqueta para poder referenciar luego en el texto con ~\ref{sec:intro}
 \pagenumbering{arabic} % para empezar la numeración de página con números
 
+En una época donde las nuevas tecnologías están totalmente integradas en nuestro día a día y en el que los niños cada vez aprenden antes a usar ordenadores y móviles, es importante desarrollar en los más jóvenes aptitudes lógicas que les conviertan de simples consumidores a creadores. 
+Como futuros informáticos, médicos, profesores o dibujantes, el pensamiento computacional les ayudará a pensar de una forma organizada, metódica y secuencial, capacidades que les serán de ayuda sea cual sea su profesión. Pero ¿cómo podemos enseñarles informática cuando son tan pequeños? Las metodologías clásicas de aprendizaje en las que la principal barrera de entrada es un lenguaje complicado y abstracto han dado paso a nuevas formas de enseñar a programar donde aplicaciones sencillas y con un diseño atractivo permiten a los jóvenes 'aprender jugando'.
 
-COMENTAR TODA LA DOCUMENTACION QUE SAQUE AL PPIO SOBRE APPS
-En este capítulo se introduce el proyecto. Debería tener información general sobre 
-el mismo, dando la información sobre el contexto en el que se ha desarrollado.
+\section{Marco General}
+\label{subsec:marcogral}
+Ya en la década de los 60 se detectó la necesidad de acercar la tecnología a la sociedad con Logo\footnote{\url{http://el.media.mit.edu/logo-foundation/what_is_logo/history.html}}, un lenguaje simple donde por medio de instrucciones básicas se guiaba a una tortuga para crear formas geométricas en la pantalla.
+Logo fue el precursor de los nuevos lenguajes y aplicaciones como Blockly\footnote{\url{https://developers.google.com/blockly/}} y su métodología de interconexión de bloques, Scratch\footnote{\url{https://scratch.mit.edu/}}, App Inventor o Alice\footnote{\url{http://www.alice.org/index.php}}, donde podemos crear animaciones en 3D.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.60\linewidth, keepaspectratio]{img/logoProgramm}
+  \caption{Programación con Logo}
+  \label{fig:logoProgramm}
+\end{figure} 
 
-No te olvides de echarle un ojo a la página con los cinco errores de escritura más frecuentes\footnote{\url{http://www.tallerdeescritores.com/errores-de-escritura-frecuentes}}.
-
-\section{}
-\label{sec:}
-
-\subsection{Estilo}
-\label{subsec:estilo}
-
-Sobre el uso de las comas\footnote{\url{http://narrativabreve.com/2015/02/opiniones-de-un-corrector-de-estilo-11-recetas-para-escribir-correctamente-la-coma.html}}
-
- \begin{figure}
-    \centering
-    \includegraphics[bb=0 0 800 600, width=12cm, keepaspectratio]{img/foro1}
-    \caption{Página con enlaces a hilos}
-    \label{figura:foro_hilos}
- \end{figure}
-
-{\footnotesize
-\begin{verbatim}
-    From gaurav at gold-solutions.co.uk  Fri Jan 14 14:51:11 2005
-    From: gaurav at gold-solutions.co.uk (gaurav_gold)
-    Date: Fri Jan 14 19:25:51 2005
-    Subject: [Mailman-Users] mailman issues
-    Message-ID: <003c01c4fa40$1d99b4c0$94592252@gaurav7klgnyif>
-
-    Dear Sir/Madam,
-    How can people reply to the mailing list?  How do i turn off
-    this feature? How can i also enable a feature where if someone
-    replies the newsletter the email gets deleted?
-    Thanks
-
-    From msapiro at value.net  Fri Jan 14 19:48:51 2005
-    From: msapiro at value.net (Mark Sapiro)
-    Date: Fri Jan 14 19:49:04 2005
-    Subject: [Mailman-Users] mailman issues
-    In-Reply-To: <003c01c4fa40$1d99b4c0$94592252@gaurav7klgnyif>
-    Message-ID: <PC173020050114104851057801b04d55@msapiro>
-
-    gaurav_gold wrote:
-    >How can people reply to the mailing list?  How do i turn off
-    this feature? How can i also enable a feature where if someone
-    replies the newsletter the email gets deleted?
-
-    See the FAQ
-    >Mailman FAQ: http://www.python.org/cgi-bin/faqw-mm.py
-    article 3.11
-\end{verbatim}
-}
+Siguiendo la idea de mis compañeros de carrera y su proyecto Dr. Scratch\footnote{\url{http://www.drscratch.org/}}, mi tutor Gregorio Robles me propuso crear una línea paralela de trabajo donde poder continuar con la labor educativa de esta aplicación pero centrándonos en otro modelo de programación. Tras analizar las alternativas, elegimos App Inventor, que mantiene la metodología de programación por bloques de Scratch o Blockly enfocándola a un público de mayor edad. 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.70\linewidth, keepaspectratio]{img/DrScratch}
+  \caption{Dr. Scratch}
+  \label{fig:DrScratch}
+\end{figure}
+Dr. Scratch es una aplicación web que analiza programas creados en Scratch. Tomando como base la librería Hairball\footnote{\url{https://github.com/ucsb-cs-education/hairball}}, muestra información sobre aspectos del pensamiento computacional tales como pensamiento lógico, control de flujo, abstracción, paralelismo, sincronización\ldots Ofreciendo una puntuación al usuario que le servirá de guía para conocer el nivel de su programa. Los puntos clave del análisis vienen determinados por las posibilidades que ofrece Scratch respecto a bloques y configuración, que varían respecto a los que nos encontramos en App Inventor. 
+Otra diferencia notable entre Scratch y App Inventor la encontramos en la salida que proporcionan. Mientras que el primero está enfocado a aplicaciones web, el segundo se centra en las aplicaciones para móviles Android. Además, como hemos comentado anteriormente, App Inventor está dirigido a un público joven, ofreciéndole la posibilidad de utilizar el hardware de sus smartphones, como la cámara o el bluetooth, e incluso interactuar con robots Lego Mindstorms.
 
 \section{Estructura de la memoria}
 \label{sec:estructura}
 
-En esta sección se debería introducir la esctura de la memoria. Así:
+A continuación veremos la estructura de esta memoria y sus capítulos principales:
 
 \begin{itemize}
-  \item En el primer capítulo se hace una intro al proyecto.
+  \item Introducción: presentación del trabajo y del contexto social en el que se desarrolla, además de la motivación para afrontarlo.
   
-  \item En el capítulo~\ref{chap:objetivos} se muestran los objetivos del proyecto.
+  \item Objetivos: desarrollo de qué es lo que buscamos con nuestra aplicación y los pasos seguidos para obtener el resultado final. 
   
-  \item A continuación se presenta el estado del arte.
+  \item Estado del arte: breve introducción a las principales tecnologías utilizadas. 
   
-  \item \ldots
+  \item Diseño e implementación: arquitectura de My App Inventor, funcionalidades y cómo se han utilizado las diferentes tecnologías. Incluye un manual de usuario. 
+
+  \item Resultados: análisis del resultado final del proyecto. 
+
+  \item Conclusiones: reflexión sobre los resultados obtenidos, consecución de objetivos y problemas encontrados.
 \end{itemize}
 
 
@@ -1038,8 +1012,8 @@ $('.navbar-collapse ul li a').click(function(){
 	\end{lstlisting}
 	\item Bootstrap: \textit{framework} que aúna el resto de tencnologías (HTML, CSS, JavaScript) y nos permite que la página se adapte a dispositivos móviles como se muestra en la figura~\ref{fig:dirappinventor}.
 		\begin{lstlisting}
-    <!-- Bootstrap Core CSS -->
-    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+<!-- Bootstrap Core CSS -->
+<link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 		\end{lstlisting}
 		\begin{figure}[H]
 			  \centering
@@ -1135,60 +1109,46 @@ De esta forma un usuario puede tener varios proyectos que a su vez estarán comp
 \cleardoublepage
 \chapter{Conclusiones}
 \label{chap:conclusiones}
-
+En este capítulo sea analizarán los objetivos planteados al inicio del proyecto, viendo cuáles se han cumplido y cuáles no. También haremos un repaso de los conocimientos adquiridos durante la carrera que me han sido de utilidad para realizar este proyecto  y qué he aprendido durante su creación. Por último, plantearemos las posibilidades de desarrollo de My App Inventor de cara a futuros proyectos. 
 
 \section{Consecución de objetivos}
 \label{sec:consecucion-objetivos}
+El objetivo general del proyecto fue crear una plataforma donde poder evaluar los puntos fuertes y débiles de una aplicación creada en App Inventor. Este punto se ha cumplido con la creación de una web en la que el usuario, tras subir su código comprimido, puede ver el resultado del análisis y guardar su programa para futuras referencias. Además se han unido distintas tecnologías (Bootstrap, Ajax) para que la página sea más dinámica y siga las tendencias actuales. 
 
-Esta sección es la sección espejo de las dos primeras del capítulo de objetivos,
-donde se planteaba el objetivo general y se elaboraban los específicos.
+A continuación, veremos algunos obstáculos que fui encontrándome durante el desarrollo del proyecto y cómo los fui solventando:
 
-Es aquí donde hay que debatir qué se ha conseguido y qué no. Cuando algo no
-se ha conseguido, se ha de justificar, en términos de qué problemas se han
-encontrado y qué medidas se han tomado para mitigar esos problemas.
-
+\begin{itemize}
+	\item La web de App Inventor requiere un registro para entrar y poder utilizar la aplicación. Dentro de la vista de usuario, tiene almacenados los proyectos guardados y en caso de querer descargar aplicaciones de otras personas, debemos antes duplicarlas en nuestro directorio. Al no existir una galería pública a la que acceder por una url simple, tuve que modificar el enfoque de Dr. Scratch y hacer que los usuarios sólo dispongan de la opción de subir un fichero comprimido desde su disco local. 
+	\item Otro de los puntos que frenó el avance en la definición del algoritmo de análisis es el amplio abanico de opciones que podemos incluir en App Inventor y su escasa documentación. Al no encontrar una lista de posibilidades, opté por incluir todos los tipos de bloque en un programa y analizar el fichero resultante, estudiando distintas combinaciones y modificaciones. 
+	\item Al no exisitir un \textit{plugin} como Hairball para el análisis del código de cada programa, al igual que en el punto anterior, desglosé los ficheros de código, creé un árbol con la información del XML y saqué patrones para posteriormente crear funciones como \textit{countBlocks} (contabiliza las etiquetas solicitadas),\textit{lookForBlocks} (busca bloques específicos) o \textit{listOfTypes} (crea una lista con los atributos buscados)
+\end{itemize}
 
 \section{Aplicación de lo aprendido}
 \label{sec:aplicacion}
+Si tuviera que destacar algún punto de la carrera de Telecomunicaciones sería la capacidad de razonar que me han aportado todas las asignaturas de programación. A parte de aprender a programar en distintos lenguajes, lo que te da una visión global, valoro el desarrollo de mi habilidad lógica y de razonamiento. Ambas han sido de gran ayuda en el ámbito laboral y por eso me gustaría poner mi granito de arena en dar a conocer iniciativas que fomentan aficiones positivas con alto valor añadido entre los jóvenes.  
 
-Aquí viene lo que has aprendido durante el Grado/Máster y que has aplicado
-en el TFG/TFM. Una buena idea es poner las asignaturas más relacionadas y
-comentar en un párrafo los conocimientos y habilidades puestos en práctica.
-
-\begin{enumerate}
-  \item a
-  \item b
-\end{enumerate}
-
+Asignaturas como \textbf{Fundamentos de la Programación}, donde se asentaron las bases de todo lo que sé actualmente sobre programación y aprendí los conceptos básicos (condiciones, variables, bucles, funciones\ldots), o \textbf{Sistemas Telemáticos} en el que nos enseñaron la arquitectura Cliente-Servidor con sus comunicaciones, han sido importantes para llegar a comprender la estructura de un programa informático. Aunque si hay una asignatura clave que me haya empujado a realizar este proyecto ha sido \textbf{Servicios y Aplicaciones Telemáticas}, donde conocí el lenguaje de programación Python y obtuve los conocimientos necesarios para crear una página web más elaborada con tecnologías como CSS o Ajax. 
 
 \section{Lecciones aprendidas}
 \label{sec:lecciones_aprendidas}
-
-Aquí viene lo que has aprendido en el Trabajo Fin de Grado/Máster.
-
-\begin{enumerate}
-  \item a
-  \item b
-\end{enumerate}
-
+Las leccciones aprendidas durante este proyecto han sido muchísimas, pero si tuviera que destacar alguna sería:
+\begin{itemize}
+  \item Hace unos meses aplicaciones como Scratch o App Inventor eran desconocidas para mí. Ahora que las conozco un poco más las recomiendo encarecidamente no sólo como plataformas para que los niños aprendan a programar, sino también los adultos, nunca es tarde para empezar nuevos retos.
+  \item He podido profundizar y afianzar mis conocimientos sobre Python, Dango y CSS.
+  \item Al buscar la mejora de la presentación web, he aprendido a utilizar tecnologías como Bootstrap o Ajax.
+  \item Dentro de la recopilación de información para incluir componentes a la página, he descubierto webs muy interesantes. Por ejemplo \textit{Font Awesome}\footnote{\url{http://fontawesome.io}}, un servidor gratuito de iconos en formato vector muy útil a la hora de decorar mensajes informativos en la página web ya que se formatean dentro del CSS. 
+\end{itemize}
 
 \section{Trabajos futuros}
 \label{sec:trabajos_futuros}
 
-Ningún software se termina, así que aquí vienen ideas y funcionalidades
-que estaría bien tener implementadas en el futuro.
-
-Es un apartado que sirve para dar ideas de cara a futuros TFGs/TFMs.
-
-
-\section{Valoración personal}
-\label{sec:valoracion}
-
-Finalmente (y de manera opcional), hay gente que se anima a dar su punto de
-vista sobre el proyecto, lo que ha aprendido, lo que le gustaría haber aprendido,
-las tecnologías utilizadas y demás.
-
-
+My App Inventor abre una nueva línea de desarrollo para futuros proyectos. Algunas ideas para hacer crecer la aplicación serían:
+\begin{itemize}
+  \item Añadir un componente social en el que poder comparar mi puntuación con la de otros usuarios.
+  \item Incluir gamificación con un sistema de recompensas si el usuario consigue ciertos logros en sus programas. 
+  \item Creación de cuentas para profesores de cara a la utilización en clases de informática y como método de apoyo en la valoración
+  \item Implementación de mecanismos de seguridad adicionales a los proporcionados por Django 
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

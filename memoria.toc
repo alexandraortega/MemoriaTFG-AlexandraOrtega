@@ -1,7 +1,6 @@
 \select@language {spanish}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}
-\contentsline {section}{\numberline {1.1}}{1}
-\contentsline {subsection}{\numberline {1.1.1}Estilo}{1}
+\contentsline {section}{\numberline {1.1}Marco General}{1}
 \contentsline {section}{\numberline {1.2}Estructura de la memoria}{3}
 \contentsline {chapter}{\numberline {2}Objetivos}{5}
 \contentsline {section}{\numberline {2.1}Objetivo general}{5}
@@ -32,9 +31,8 @@
 \contentsline {chapter}{\numberline {5}Resultados}{41}
 \contentsline {chapter}{\numberline {6}Conclusiones}{43}
 \contentsline {section}{\numberline {6.1}Consecuci\IeC {\'o}n de objetivos}{43}
-\contentsline {section}{\numberline {6.2}Aplicaci\IeC {\'o}n de lo aprendido}{43}
-\contentsline {section}{\numberline {6.3}Lecciones aprendidas}{43}
-\contentsline {section}{\numberline {6.4}Trabajos futuros}{44}
-\contentsline {section}{\numberline {6.5}Valoraci\IeC {\'o}n personal}{44}
-\contentsline {chapter}{\numberline {A}Manual de usuario}{45}
-\contentsline {chapter}{Bibliograf\'{\i }a}{47}
+\contentsline {section}{\numberline {6.2}Aplicaci\IeC {\'o}n de lo aprendido}{44}
+\contentsline {section}{\numberline {6.3}Lecciones aprendidas}{45}
+\contentsline {section}{\numberline {6.4}Trabajos futuros}{45}
+\contentsline {chapter}{\numberline {A}Manual de usuario}{47}
+\contentsline {chapter}{Bibliograf\'{\i }a}{49}
