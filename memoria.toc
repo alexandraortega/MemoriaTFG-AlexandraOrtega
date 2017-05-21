@@ -6,33 +6,35 @@
 \contentsline {section}{\numberline {2.1}Objetivo general}{5}
 \contentsline {section}{\numberline {2.2}Objetivos espec\IeC {\'\i }ficos}{5}
 \contentsline {section}{\numberline {2.3}Planificaci\IeC {\'o}n temporal}{6}
-\contentsline {chapter}{\numberline {3}Estado del arte}{7}
-\contentsline {section}{\numberline {3.1}App Inventor}{7}
-\contentsline {subsection}{\numberline {3.1.1}App Inventor Designer}{8}
-\contentsline {subsection}{\numberline {3.1.2}App Inventor Blocks}{10}
-\contentsline {section}{\numberline {3.2}Python}{11}
-\contentsline {section}{\numberline {3.3}Django}{13}
-\contentsline {section}{\numberline {3.4}SQLite}{13}
-\contentsline {section}{\numberline {3.5}HHTP}{14}
-\contentsline {section}{\numberline {3.6}HTML5}{14}
-\contentsline {section}{\numberline {3.7}CSS}{15}
-\contentsline {section}{\numberline {3.8}JavaScript}{16}
-\contentsline {section}{\numberline {3.9}Bootstrap}{16}
-\contentsline {section}{\numberline {3.10}Ajax}{17}
-\contentsline {chapter}{\numberline {4}Dise\IeC {\~n}o e implementaci\IeC {\'o}n}{19}
-\contentsline {section}{\numberline {4.1}Arquitectura general}{19}
-\contentsline {section}{\numberline {4.2}Dise\IeC {\~n}o e implementaci\IeC {\'o}n del servidor}{20}
-\contentsline {subsection}{\numberline {4.2.1}L\IeC {\'o}gica servidor: Django}{20}
-\contentsline {subsubsection}{Comunicaci\IeC {\'o}n}{23}
-\contentsline {subsubsection}{An\IeC {\'a}lisis de c\IeC {\'o}digo}{25}
-\contentsline {subsubsection}{Env\IeC {\'\i }o de resultados}{33}
-\contentsline {subsection}{\numberline {4.2.2}Modelo de datos}{37}
-\contentsline {section}{\numberline {4.3}Manual de Usuario}{40}
-\contentsline {chapter}{\numberline {5}Resultados}{41}
-\contentsline {chapter}{\numberline {6}Conclusiones}{43}
-\contentsline {section}{\numberline {6.1}Consecuci\IeC {\'o}n de objetivos}{43}
-\contentsline {section}{\numberline {6.2}Aplicaci\IeC {\'o}n de lo aprendido}{44}
-\contentsline {section}{\numberline {6.3}Lecciones aprendidas}{45}
-\contentsline {section}{\numberline {6.4}Trabajos futuros}{45}
-\contentsline {chapter}{\numberline {A}Manual de usuario}{47}
-\contentsline {chapter}{Bibliograf\'{\i }a}{49}
+\contentsline {chapter}{\numberline {3}Estado del arte}{9}
+\contentsline {section}{\numberline {3.1}App Inventor}{9}
+\contentsline {subsection}{\numberline {3.1.1}App Inventor Designer}{10}
+\contentsline {subsection}{\numberline {3.1.2}App Inventor Blocks}{12}
+\contentsline {section}{\numberline {3.2}Python}{13}
+\contentsline {section}{\numberline {3.3}Django}{15}
+\contentsline {section}{\numberline {3.4}SQLite}{15}
+\contentsline {section}{\numberline {3.5}HTTP}{16}
+\contentsline {section}{\numberline {3.6}HTML5}{16}
+\contentsline {section}{\numberline {3.7}CSS}{17}
+\contentsline {section}{\numberline {3.8}JavaScript}{18}
+\contentsline {section}{\numberline {3.9}Bootstrap}{18}
+\contentsline {section}{\numberline {3.10}AJAX}{19}
+\contentsline {chapter}{\numberline {4}Dise\IeC {\~n}o e implementaci\IeC {\'o}n}{21}
+\contentsline {section}{\numberline {4.1}Arquitectura general}{21}
+\contentsline {section}{\numberline {4.2}Dise\IeC {\~n}o e implementaci\IeC {\'o}n del servidor}{22}
+\contentsline {subsection}{\numberline {4.2.1}L\IeC {\'o}gica servidor: Django}{22}
+\contentsline {subsubsection}{Comunicaci\IeC {\'o}n}{25}
+\contentsline {subsubsection}{An\IeC {\'a}lisis de c\IeC {\'o}digo}{27}
+\contentsline {subsubsection}{Env\IeC {\'\i }o de resultados}{34}
+\contentsline {subsection}{\numberline {4.2.2}Modelo de datos}{39}
+\contentsline {section}{\numberline {4.3}Manual de Usuario}{42}
+\contentsline {chapter}{\numberline {5}Resultados}{51}
+\contentsline {section}{\numberline {5.1}Nivel Alto:Multifunctional Aplication}{51}
+\contentsline {section}{\numberline {5.2}Nivel Medio: Android Mash}{54}
+\contentsline {section}{\numberline {5.3}Nivel Bajo: YOUB Analogic Clock}{57}
+\contentsline {chapter}{\numberline {6}Conclusiones}{61}
+\contentsline {section}{\numberline {6.1}Consecuci\IeC {\'o}n de objetivos}{61}
+\contentsline {section}{\numberline {6.2}Aplicaci\IeC {\'o}n de lo aprendido}{62}
+\contentsline {section}{\numberline {6.3}Lecciones aprendidas}{63}
+\contentsline {section}{\numberline {6.4}Trabajos futuros}{63}
+\contentsline {chapter}{Bibliograf\'{\i }a}{65}
