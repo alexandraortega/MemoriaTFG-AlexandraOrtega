@@ -4,31 +4,53 @@
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Dr. Scratch}}{2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Web App Inventor}}{7}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Web App Inventor}}{8}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Web App Inventor}}{9}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Web App Inventor}}{10}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Lenguajes m\IeC {\'a}s importantes en 2016. Fuente: www.codeeval.com}}{12}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Directorio de archivos Bootstrap}}{16}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces HTML simple VS. con Bootstrap }}{17}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Web App Inventor}}{9}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Web App Inventor}}{10}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Web App Inventor}}{11}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Web App Inventor}}{12}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Lenguajes m\IeC {\'a}s importantes en 2016. Fuente: www.codeeval.com}}{14}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Directorio de archivos Bootstrap}}{18}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces HTML simple VS. con Bootstrap }}{19}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Arquitectura Cliente-Servidor}}{20}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Directorio de archivos My App Inventor}}{21}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Flujo principal My App Inventor}}{22}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Opciones disponibles}}{24}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Directorio App Inventor}}{25}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Ejemplo fichero .scm}}{26}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Ejemplo fichero .bky}}{26}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Estructura de la clasificaci\IeC {\'o}n}}{28}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Componentes}}{29}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Programaci\IeC {\'o}n}}{31}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Resultados del an\IeC {\'a}lisis}}{33}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Resultados de la categor\IeC {\'\i }a Componentes}}{34}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Resultados de la categor\IeC {\'\i }a Programaci\IeC {\'o}n}}{35}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Resultados de la categor\IeC {\'\i }a Usabilidad}}{35}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Versi\IeC {\'o}n m\IeC {\'o}vil con Bootstrap}}{37}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Petici\IeC {\'o}n de Bootstrap desde el navegador}}{37}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Modelo de datos}}{39}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Arquitectura Cliente-Servidor}}{22}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Directorio de archivos My App Inventor}}{23}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Flujo principal My App Inventor}}{24}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Opciones disponibles}}{26}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Directorio App Inventor}}{27}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Ejemplo fichero .scm}}{28}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Ejemplo fichero .bky}}{28}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Estructura de la clasificaci\IeC {\'o}n}}{30}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Componentes}}{31}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Programaci\IeC {\'o}n}}{32}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Resultados del an\IeC {\'a}lisis}}{35}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Resultados de la categor\IeC {\'\i }a Componentes}}{36}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Resultados de la categor\IeC {\'\i }a Programaci\IeC {\'o}n}}{37}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Resultados de la categor\IeC {\'\i }a Usabilidad}}{37}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Versi\IeC {\'o}n m\IeC {\'o}vil con Bootstrap}}{39}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Petici\IeC {\'o}n de Bootstrap desde el navegador}}{39}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Modelo de datos}}{41}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Pantalla de Bienvenida}}{42}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Pantalla de Inicio de Sesi\IeC {\'o}n}}{42}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Pantalla Servicios}}{43}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Pantalla `Acerca de'}}{43}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Link para crear una nueva cuenta}}{44}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Creaci\IeC {\'o}n de cuenta de usuario}}{44}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Mensaje de error por contrase\IeC {\~n}a inv\IeC {\'a}lida}}{45}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Mensaje de confirmaci\IeC {\'o}n al registrarse}}{45}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Opciones disponibles en vista de usuario}}{46}
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Actualizaci\IeC {\'o}n de datos de usuario}}{46}
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Mensaje de confirmaci\IeC {\'o}n de actualizaci\IeC {\'o}n de datos de usuario}}{47}
+\contentsline {figure}{\numberline {4.29}{\ignorespaces A\IeC {\~n}adir un nuevo proyecto}}{47}
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Resultados del an\IeC {\'a}lisis de nuestro proyecto}}{48}
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Ver desglose del an\IeC {\'a}lisis por categor\IeC {\'\i }a}}{48}
+\contentsline {figure}{\numberline {4.32}{\ignorespaces Lista de proyectos guardados}}{49}
+\contentsline {figure}{\numberline {4.33}{\ignorespaces Bot\IeC {\'o}n para salir de sesi\IeC {\'o}n}}{49}
+\contentsline {figure}{\numberline {4.34}{\ignorespaces Mensaje de confirmaci\IeC {\'o}n de cierre de sesi\IeC {\'o}n}}{50}
 \addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Multifunctional Aplication: dise\IeC {\~n}o}}{51}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Multifunctional Aplication: clasificaci\IeC {\'o}n general}}{52}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Android Mash: dise\IeC {\~n}o}}{54}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Android Mash: clasificaci\IeC {\'o}n general}}{55}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Analogic Clock: dise\IeC {\~n}o}}{57}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Analogic Clock: clasificaci\IeC {\'o}n general}}{57}
 \addvspace {10\p@ }
