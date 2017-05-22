@@ -239,7 +239,7 @@ The multiple \textbf{technologies} used in this project are oriented towards web
 \label{sec:intro} % etiqueta para poder referenciar luego en el texto con ~\ref{sec:intro}
 \pagenumbering{arabic} % para empezar la numeración de página con números
 
-En una época donde las nuevas tecnologías están totalmente integradas en nuestro día a día y en el que los niños cada vez aprenden antes a usar ordenadores y móviles, es importante desarrollar en los más jóvenes aptitudes lógicas que les conviertan de simples consumidores a creadores. 
+En una época donde las nuevas tecnologías están totalmente integradas en nuestro día a día y en la que los niños cada vez aprenden antes a usar ordenadores y móviles, es importante desarrollar en los más jóvenes aptitudes lógicas que les conviertan de simples consumidores a creadores. 
 Como futuros informáticos, médicos, profesores o dibujantes, el pensamiento computacional les ayudará a pensar de una forma organizada, metódica y secuencial, capacidades que les serán de ayuda sea cual sea su profesión. Pero ¿cómo podemos enseñarles informática cuando son tan pequeños? Las metodologías clásicas de aprendizaje en las que la principal barrera de entrada es un lenguaje complicado y abstracto han dado paso a nuevas formas de enseñar a programar donde aplicaciones sencillas y con un diseño atractivo permiten a los jóvenes `aprender jugando'.
 
 \section{Marco General}
@@ -1135,7 +1135,7 @@ También se informa si el registro ha finalizado correctamente:
   \label{fig:createUserOK}
 \end{figure}
 
-Volviendo a la página principal, iniciaremos sesión en el apartado `Sign In', lo que redirigirá a la vista de la figura~\ref{fig:userView}. Nada más entrar nos muestra tres opciones: ver proyectos guardados, subir un nuevo proyecto o modificar los datos de nuestra cuenta. Tras seleccionar una de ellas la página ofrecerá el nuevo contenido (gracias a la tecnología Ajax podemos actualizar asíncronamente esta sección de la web).
+Volviendo a la página principal, iniciaremos sesión en el apartado `Sign In', lo que redirigirá a la vista de la figura~\ref{fig:userView}. Nada más entrar nos muestra tres opciones: ver proyectos guardados, subir un nuevo proyecto o modificar los datos de nuestra cuenta. Tras seleccionar una de ellas la página ofrecerá el nuevo contenido (gracias a la tecnología AJAX podemos actualizar asíncronamente esta sección de la web).
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.90\linewidth, keepaspectratio]{img/userView}
@@ -1427,21 +1427,21 @@ En este capítulo sea analizarán los objetivos planteados al inicio del proyect
 
 \section{Consecución de objetivos}
 \label{sec:consecucion-objetivos}
-El objetivo general del proyecto fue crear una plataforma donde poder evaluar los puntos fuertes y débiles de una aplicación creada en App Inventor. Este punto se ha cumplido con la creación de una web en la que el usuario, tras subir su código comprimido, puede ver el resultado del análisis y guardar su programa para futuras referencias. Además se han unido distintas tecnologías (Bootstrap, Ajax) para que la página sea más dinámica y siga las tendencias actuales. 
+El objetivo general del proyecto fue crear una plataforma donde poder evaluar los puntos fuertes y débiles de una aplicación creada en App Inventor. Este punto se ha cumplido con la creación de una web en la que el usuario, tras subir su código comprimido, puede ver el resultado del análisis y guardar su programa para futuras referencias. Además se han unido distintas tecnologías (Bootstrap, AJAX) para que la página sea más dinámica y siga las tendencias actuales. 
 
 A continuación, veremos algunos obstáculos que fui encontrándome durante el desarrollo del proyecto y cómo los fui solventando:
 
 \begin{itemize}
 	\item La web de App Inventor requiere un registro para entrar y poder utilizar la aplicación. Dentro de la vista de usuario, tiene almacenados los proyectos guardados y en caso de querer descargar aplicaciones de otras personas, debemos antes duplicarlas en nuestro directorio. Al no existir una galería pública a la que acceder por una url simple, tuve que modificar el enfoque de Dr. Scratch y hacer que los usuarios sólo dispongan de la opción de subir un fichero comprimido desde su disco local. 
 	\item Otro de los puntos que frenó el avance en la definición del algoritmo de análisis es el amplio abanico de opciones que podemos incluir en App Inventor y su escasa documentación. Al no encontrar una lista de posibilidades, opté por incluir todos los tipos de bloque en un programa y analizar el fichero resultante, estudiando distintas combinaciones y modificaciones. 
-	\item Al no exisitir un \textit{plugin} como Hairball para el análisis del código de cada programa, al igual que en el punto anterior, desglosé los ficheros de código, creé un árbol con la información del XML y saqué patrones para posteriormente crear funciones como \textit{countBlocks} (contabiliza las etiquetas solicitadas),\textit{lookForBlocks} (busca bloques específicos) o \textit{listOfTypes} (crea una lista con los atributos buscados)
+	\item Al no exisitir un \textit{plugin} como Hairball para el análisis del código de cada programa, al igual que en el punto anterior, desglosé los ficheros de código, creé un árbol con la información del XML y saqué patrones para posteriormente crear funciones como \textit{countBlocks} (contabiliza las etiquetas solicitadas), \textit{lookForBlocks} (busca bloques específicos) o \textit{listOfTypes} (crea una lista con los atributos buscados)
 \end{itemize}
 
 \section{Aplicación de lo aprendido}
 \label{sec:aplicacion}
 Si tuviera que destacar algún punto de la carrera de Telecomunicaciones sería la capacidad de razonar que me han aportado todas las asignaturas de programación. A parte de aprender a programar en distintos lenguajes, lo que te da una visión global, valoro el desarrollo de mi habilidad lógica y de razonamiento. Ambas han sido de gran ayuda en el ámbito laboral y por eso me gustaría poner mi granito de arena en dar a conocer iniciativas que fomentan aficiones positivas con alto valor añadido entre los jóvenes.  
 
-Asignaturas como \textbf{Fundamentos de la Programación}, donde se asentaron las bases de todo lo que sé actualmente sobre programación y aprendí los conceptos básicos (condiciones, variables, bucles, funciones\ldots), o \textbf{Sistemas Telemáticos} en el que nos enseñaron la arquitectura Cliente-Servidor con sus comunicaciones, han sido importantes para llegar a comprender la estructura de un programa informático. Aunque si hay una asignatura clave que me haya empujado a realizar este proyecto ha sido \textbf{Servicios y Aplicaciones Telemáticas}, donde conocí el lenguaje de programación Python y obtuve los conocimientos necesarios para crear una página web más elaborada con tecnologías como CSS o Ajax. 
+Asignaturas como \textbf{Fundamentos de la Programación}, donde se asentaron las bases de todo lo que sé actualmente sobre programación y aprendí los conceptos básicos (condiciones, variables, bucles, funciones\ldots), o \textbf{Sistemas Telemáticos} en el que nos enseñaron la arquitectura Cliente-Servidor con sus comunicaciones, han sido importantes para llegar a comprender la estructura de un programa informático. Aunque si hay una asignatura clave que me haya empujado a realizar este proyecto ha sido \textbf{Servicios y Aplicaciones Telemáticas}, donde conocí el lenguaje de programación Python y obtuve los conocimientos necesarios para crear una página web más elaborada con tecnologías como CSS o AJAX. 
 
 \section{Lecciones aprendidas}
 \label{sec:lecciones_aprendidas}
