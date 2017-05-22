@@ -57,7 +57,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % BIBLIOGRAFIA
-\nocite{walter:_learningGuide,appinventordoc:_appinventordoc,pythondoc:_pythondoc,djangodoc:_djangodoc, w3doc:_w3doc,sqldoc:_sqldoc,wwwdoc:_wwwdoc,bootdoc:_bootdoc,boottheme:_boottheme}
+\nocite{walter:_learningGuide,appinventordoc:_appinventordoc,Pilgrim:2009:DP:1592936,holovaty2009definitive, Johnson:2015:CHC:2789698,Newman:2004:SQL:1201593,wwwdoc:_wwwdoc,radford2015learning,boottheme:_boottheme,tinoco2014programacion}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PORTADA
@@ -411,7 +411,7 @@ Por pantalla podremos insertar:
 
 \section{Python} 
 \label{sec:seccion2}
-Python es un potente lenguaje de programación de alto nivel entre cuyas características principales destaca una: la sencillez. Gracias a su facilidad de uso y de lectura, cualquier programador puede entender su sintaxis y adaptarla a sus necesidades. Además es de código abierto y multiplataforma, es decir, puede redistribuirse gratuitamente en cualquier sistema operativo: Linux, Unix, Windows o MAC OS.
+Python\footnote{\url{https://www.python.org/}} es un potente lenguaje de programación de alto nivel entre cuyas características principales destaca una: la sencillez. Gracias a su facilidad de uso y de lectura, cualquier programador puede entender su sintaxis y adaptarla a sus necesidades. Además es de código abierto y multiplataforma, es decir, puede redistribuirse gratuitamente en cualquier sistema operativo: Linux, Unix, Windows o MAC OS.
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.70\linewidth, keepaspectratio]{img/codeval2016}
@@ -431,7 +431,7 @@ Algunas características a destacar:
 
 \section{Django} 
 \label{sec:seccion3}
-Django es un framework de alto nivel escrito en Python para construir aplicaciones web de forma gratuita, sencilla y rápida. Incluye todas las librerías necesarias que pueden utilizarse en el desarrollo web, de manera que el programador sólo tiene que preocuparse en diseñar su aplicación sin necesidad de `reinventar la rueda'.
+Django\footnote{\url{https://www.djangoproject.com/}} es un framework de alto nivel escrito en Python para construir aplicaciones web de forma gratuita, sencilla y rápida. Incluye todas las librerías necesarias que pueden utilizarse en el desarrollo web, de manera que el programador sólo tiene que preocuparse en diseñar su aplicación sin necesidad de `reinventar la rueda'.
 
 Principales características:
 \begin{itemize}
@@ -443,7 +443,7 @@ Principales características:
 \end{itemize}
 \section{SQLite} 
 \label{sec:seccion4}
-SQLite es un sistema de gestión de bases de datos basado en el estándar SQL. Sus principales características son:
+SQLite\footnote{\url{http://www.sqlite.org/}} es un sistema de gestión de bases de datos basado en el estándar SQL. Sus principales características son:
 \begin{itemize}
 	\item Transacciones atómicas, consistencia, aislamiento, y durabilidad ante fallos de sistema. 
 	\item No necesita configuración previa para poder utilizarlo.
@@ -453,7 +453,7 @@ SQLite es un sistema de gestión de bases de datos basado en el estándar SQL. S
 \end{itemize}
 \section{HTTP} 
 \label{sec:seccion5}
-HTTP son las siglas de Hypertext Transfer Protocol, un protocolo de comunicación web a nivel aplicación. Se utiliza en aplicaciones distribuidas y define los mensajes a intercambiar entre cliente y servidor dentro del protocolo pregunta/respuesta.  
+HTTP\footnote{\url{https://www.w3.org/standards}} son las siglas de Hypertext Transfer Protocol, un protocolo de comunicación web a nivel aplicación. Se utiliza en aplicaciones distribuidas y define los mensajes a intercambiar entre cliente y servidor dentro del protocolo pregunta/respuesta.  
 \begin{itemize}
 	\item No mantiene estado: no guarda información de conexiones anteriores. En caso de necesitar hacerlo se utilizan cookies, ficheros de información almacenados en el cliente por el servidor. 
 	\item Es colaborativo. 
@@ -509,7 +509,7 @@ header .intro-text .intro-heading {
 JavaScript es un lenguaje de programación interpretado utilizado principalmente en el lado del cliente para añadir dinamismo a las páginas web mostradas por el navegador. Al ser interpretado, no necesita ser compilado previamente ya que se interpreta a tiempo real, mejorando la eficiencia de las aplicaciones. 
 \section{Bootstrap} 
 \label{sec:seccion9}
-Bootstrap es un framework de código abierto para el desarrollo de páginas y aplicaciones web creado por desarrolladores de Twitter. Este conjunto de herramientas une las tecnologías HTML, CSS, y Javascript para adaptar dinámicamente el formato de las webs al dispositivo utilizado (ordenador, tableta o móvil).
+Bootstrap\footnote{\url{http://getbootstrap.com/}}  es un framework de código abierto para el desarrollo de páginas y aplicaciones web creado por desarrolladores de Twitter. Este conjunto de herramientas une las tecnologías HTML, CSS, y Javascript para adaptar dinámicamente el formato de las webs al dispositivo utilizado (ordenador, tableta o móvil).
 La estructura básica de Bootstrap sigue el sistema de ficheros de la figura~\ref{fig:dirarchivosBoot}. En ella podemos ver cómo los ficheros CSS y JavaScript base vienen incluidos en su versión normal (*.css) y minimizada (*.min.css). Esta última es una compresión en la que se eliminan caracteres innecesarios en el código como espacios o saltos de línea, y su objetivo es reducir el tiempo de procesado de los ficheros por el navegador. 
 \begin{figure}[H]
   \dirtree{%
