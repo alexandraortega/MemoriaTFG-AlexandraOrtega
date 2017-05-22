@@ -1,32 +1,12 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{appinventordoc:_appinventordoc}
 {App} {Inventor}.
 \newblock \\ http://appinventor.mit.edu/explore/.
 
-\bibitem{bootdoc:_bootdoc}
-Bootstrap.
-\newblock \\ http://getbootstrap.com/.
-
-\bibitem{djangodoc:_djangodoc}
-{Documentación} {Django}.
-\newblock \\ https://www.djangoproject.com/.
-
-\bibitem{pythondoc:_pythondoc}
-{Documentación} {Python}.
-\newblock \\ https://www.python.org/.
-
 \bibitem{boottheme:_boottheme}
 {Plantilla} {Bootstrap}.
 \newblock \\ https://startbootstrap.com/.
-
-\bibitem{sqldoc:_sqldoc}
-Sqlite.
-\newblock \\ http://www.sqlite.org/.
-
-\bibitem{w3doc:_w3doc}
-W3schools.
-\newblock \\ https://www.w3schools.com/sql/.
 
 \bibitem{wwwdoc:_wwwdoc}
 {World} {Wide} {Web} {Consortium} {(W3C)}.
@@ -37,5 +17,35 @@ M.~S. Derek~Walter.
 \newblock {\em Learning MIT App Inventor: A Hands-On Guide to Building Your Own
   Android Apps}.
 \newblock Addison-Wesley Professional, 2014.
+
+\bibitem{holovaty2009definitive}
+A.~Holovaty and J.~Kaplan-Moss.
+\newblock {\em The definitive guide to Django: Web development done right}.
+\newblock Apress, 2009.
+
+\bibitem{Johnson:2015:CHC:2789698}
+F.~Johnson, S.~Jenkins, A.~Crute, and J.~Wallace.
+\newblock {\em Coding HTML and CSS: Expert Advice, Made Easy}.
+\newblock Flame Tree Publishing, United Kingdom, 2015.
+
+\bibitem{Newman:2004:SQL:1201593}
+C.~Newman.
+\newblock {\em SQLite (Developer's Library)}.
+\newblock Sams, Indianapolis, IN, USA, 2004.
+
+\bibitem{Pilgrim:2009:DP:1592936}
+M.~Pilgrim.
+\newblock {\em Dive Into Python}.
+\newblock CreateSpace, Paramount, CA, 2009.
+
+\bibitem{radford2015learning}
+S.~Radford.
+\newblock {\em Learning Web Development with Bootstrap and AngularJS}.
+\newblock Community experience distilled. Packt Publishing, 2015.
+
+\bibitem{tinoco2014programacion}
+E.~Tinoco and I.~Sol{\'\i}s.
+\newblock {\em Programaci{\'o}n Web con CSS, JavaScript, PHP y AJAX:}.
+\newblock Iv{\'a}n Soria Sol{\'\i}s, 2014.
 
 \end{thebibliography}
