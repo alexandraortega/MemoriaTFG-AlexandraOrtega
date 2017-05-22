@@ -31,7 +31,7 @@
 \contentsline {chapter}{\numberline {5}Resultados}{51}
 \contentsline {section}{\numberline {5.1}Nivel Alto:Multifunctional Aplication}{51}
 \contentsline {section}{\numberline {5.2}Nivel Medio: Android Mash}{54}
-\contentsline {section}{\numberline {5.3}Nivel Bajo: YOUB Analogic Clock}{57}
+\contentsline {section}{\numberline {5.3}Nivel bajo: YOUB Analogic Clock}{57}
 \contentsline {chapter}{\numberline {6}Conclusiones}{61}
 \contentsline {section}{\numberline {6.1}Consecuci\IeC {\'o}n de objetivos}{61}
 \contentsline {section}{\numberline {6.2}Aplicaci\IeC {\'o}n de lo aprendido}{62}
