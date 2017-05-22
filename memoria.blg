@@ -1,33 +1,8 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: memoria.aux
 The style file: abbrv.bst
 Database file #1: memoria.bib
-You're missing a field name---line 53 of file memoria.bib
- : 
- : %  author =   {Eric Bonabeau and Marco Dorigo and Guy Theraulaz},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 155 of file memoria.bib
- : 
- : % author = {David L. Parnas},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 173 of file memoria.bib
- : 
- : %   author =       {González-Barahona, Jesús M. and Robles, Gregorio and
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 203 of file memoria.bib
- : 
- : %  author =   {Rishab Aiyer Ghosh and Ruediger Glott and Bernhard Krieger and Gregorio Robles},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 223 of file memoria.bib
- : 
- : %  author =  {David A. Wheeler},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in appinventordoc:_appinventordoc
 Warning--to sort, need author or key in pythondoc:_pythondoc
 Warning--to sort, need author or key in djangodoc:_djangodoc
@@ -77,4 +52,4 @@ warning$ -- 8
 while$ -- 2
 width$ -- 10
 write$ -- 68
-(There were 5 error messages)
+(There were 8 warnings)
